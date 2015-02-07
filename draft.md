@@ -27,11 +27,13 @@ Draft
        "mode": "{mode}"//取值为file or tree,
        "name": "{name}"//名称
        “path”: "{path}"//表示改文件的路径,从根开始
+       "mtime":{mtime}//最后修改时间,单位:秒
      }
   ],
   "mode":"{当前文件类型}"
   "name":"{当前文件名}",
   "path":"{当前文件路径}"
+  "mtime":"{最后修改时间}"
 }
 ```
 
