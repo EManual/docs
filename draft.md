@@ -17,32 +17,37 @@ Draft
 
 ```
 ---java
+  ---dist //打包后的目录，例如打包成zip
+    ----markdown // `emanual create`生成的包含info.json的markdown文件
+    ----{lang}.zip  //对应语言的打包
 	---markdown //专门存放markdown目录
-		---advance
+		---0001-advance
 			----info.json //存贮本文件目录的信息
 			----xx.md
-		---basic
-			----xx.md
-			----xx.md
-			----xx.md			
+		---0002-basic  //YYYY-{name}四位序号
+			----0001-xx.md
+			----0002-xx.md
+			----0002-xx.md			
 	---img //专门存放图片文件路径
 	---config.json
 ```
 
-`info.json`
+`info.json` (由`emanual create生成`)
 
 ```
 {
   "files" :[
      {
        "mode": "{mode}"//取值为file or tree,
-       "name": "{name}"//名称
-       “path”: "{path}"//表示改文件的路径,从根开始
+       "name": "{name}"//当前名称(拼音)
+       "rname": "{raw_name}"//原来的名字不含拼音
+       “path”: "{path}"//表示改文件的路径,从根开始(主义)
        "mtime":{mtime}//最后修改时间,单位:秒
      }
   ],
   "mode":"{当前文件类型}"
   "name":"{当前文件名}",
+  "rname": "{原来的名字不含拼音}",
   "path":"{当前文件路径}"
   "mtime":"{最后修改时间}"
 }
@@ -52,7 +57,8 @@ Draft
 markdown图片
 -----------
 
-均放置在`img/`
+- 避免出现图片 
+- 均放置在`img/`
 
 ```
 ![title](http://www.ieemanual.com/md-java/img/xxx.png)
