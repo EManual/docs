@@ -18,7 +18,7 @@ Draft
 ```
 ---java
   ---dist //打包后的目录，例如打包成zip
-    ----markdown // `emanual create`生成的包含info.json的markdown文件
+    ----{lang} // `emanual create`生成的包含info.json的markdown文件
     ----{lang}.zip  //对应语言的打包
 	---markdown //专门存放markdown目录
 		---0001-advance
@@ -41,7 +41,7 @@ Draft
        "mode": "{mode}"//取值为file or tree,
        "name": "{name}"//当前名称(拼音)
        "rname": "{raw_name}"//原来的名字不含拼音
-       “path”: "{path}"//表示改文件的路径,从根开始(主义)
+       “path”: "{path}"//表示改文件的路径,从根开始(注意:指的是资源包得根目录,例如这个`/java`)
        "mtime":{mtime}//最后修改时间,单位:秒
      }
   ],
