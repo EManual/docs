@@ -1,6 +1,12 @@
 Draft
 =====
 
+# 开发&编辑环境
+
+- Linux & Mac OS X ,尽量不要window下编辑，中文文件名容易没有转码而导致错误
+- 批量修改可以使用Sublime Text 强大的字符串替换
+
+
 # 文件名规范
 
 - 语言项目文件名因为全部小写，例如:`md-{lang}`,`{lang}`全部为小写
@@ -57,7 +63,8 @@ markdown图片
 -----------
 
 - 避免出现图片 
-- 均放置在`img/`
+- 均放置在`img/` 
+- 图片命名规则：yyyy-mm-dd-nn(年 月 日 第几张)
 
 ```
 ![title](http://www.ieemanual.com/md-java/img/xxx.png)
@@ -99,6 +106,7 @@ markdown图片
     {
         "name":"{拼音转换后的名称}",
         "rname":"{为转换的名称}", 
+        "path":"{newsfeeds/a/b/c}" //拼音转换好的路径
         "description":"{10-20字的简介}",
         
      }
