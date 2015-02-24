@@ -11,6 +11,9 @@ Draft
 
 - 语言项目文件名因为全部小写，例如:`md-{lang}`,`{lang}`全部为小写
 - 尽量不要window下编辑
+- 标点符号
+  - 中文符号不能用(因为客户端忘记url encode就404了)故统一不适用中文符号，使用英文符号代替
+  - NOTE: **文件名不能使用`:`**,Linux下正常，OS X下直接创建不行，用命令行创建自动转成/ ，windows下直接跪了:直接截断后面的，**所以不再能使用冒号，用空格代替**
 
 
 # markdown规范
@@ -26,15 +29,15 @@ Draft
   ---dist //打包后的目录，例如打包成zip
     ----{lang} // `emanual create`生成的包含info.json的markdown文件
     ----{lang}.zip  //对应语言的打包
-	---markdown //专门存放markdown目录
-		---0001-advance
-			----info.json //存贮本文件目录的信息
-			----xx.md
-		---0002-basic  //YYYY-{name}四位序号
-			----0001-xx.md
-			----0002-xx.md
-			----0002-xx.md			
-	---img //专门存放图片文件路径
+  ---markdown //专门存放markdown目录
+    ---0001-advance
+      ----info.json //存贮本文件目录的信息
+      ----xx.md
+    ---0002-basic  //YYYY-{name}四位序号
+      ----0001-xx.md
+      ----0002-xx.md
+      ----0002-xx.md      
+  ---img //专门存放图片文件路径
 ```
 
 `info.json` (由`emanual create生成`)
@@ -112,11 +115,3 @@ markdown图片
      }
 ]
 ```
-
-
-
-
-
-
-
-	
