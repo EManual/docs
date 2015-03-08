@@ -20,6 +20,7 @@ the release module
     "version_code":11,
     "download_url":"http:www.iemanual.com/md-release/dist/emanual.apk", 
     "update_time":"2015-02-28",
+    "size":"2.3 MB"
     "change_log":[
       {"content":"fix xxxx"},
       {"content":"fix xxxx"}
