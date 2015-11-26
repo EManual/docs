@@ -3,9 +3,9 @@ ReadMe
 
 Read me before you getting start with EManual.
 
-What?
+内容
 -----
 
 
-- [draft](draft.md)
-- [License](https://github.com/EManual/License)
+- [草案](draft.md)
+- [开源协议](https://github.com/EManual/License)
