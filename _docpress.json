@@ -2,10 +2,29 @@
   "toc": {
     "sections": [
       {
-        "title": "EManual",
+        "title": "介绍",
         "source": "docs/intro.md",
         "url": "index.html",
-        "slug": "index"
+        "slug": "index",
+        "headings": [
+          {
+            "title": "EManual-编程助手开发文档",
+            "depth": 2,
+            "id": "emanual-",
+            "headings": [
+              {
+                "title": "安装",
+                "depth": 3,
+                "id": ""
+              },
+              {
+                "title": "发布",
+                "depth": 3,
+                "id": ""
+              }
+            ]
+          }
+        ]
       },
       {
         "title": "草案",
@@ -78,8 +97,27 @@
   "index": {
     "index.html": {
       "source": "docs/intro.md",
-      "title": "EManual",
-      "slug": "index"
+      "title": "介绍",
+      "slug": "index",
+      "headings": [
+        {
+          "title": "EManual-编程助手开发文档",
+          "depth": 2,
+          "id": "emanual-",
+          "headings": [
+            {
+              "title": "安装",
+              "depth": 3,
+              "id": ""
+            },
+            {
+              "title": "发布",
+              "depth": 3,
+              "id": ""
+            }
+          ]
+        }
+      ]
     },
     "draft.html": {
       "source": "docs/draft.md",
