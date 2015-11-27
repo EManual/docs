@@ -1,11 +1,19 @@
-ReadMe
-------
+[编程助手开发文档](http://emanual.github.io/docs)
 
-Read me before you getting start with EManual.
+### 安装
 
-内容
------
+* 文档生成工具
+```
+$ npm install -g docpress
+```
 
+* 同步文档到GitHub Pages
+```
+$ npm install -g git-update-ghpages
+```
 
-- [草案](draft.md)
-- [开源协议](https://github.com/EManual/License)
+### 发布
+
+```
+$ make deploy
+```
