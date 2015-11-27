@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css?t=945616d9">
+    <script src="assets/script.js?t=2bcc4b59"></script>
+    <title>草案</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-draft">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="draft">Draft</h1>
+<h1 id="and">&#x5F00;&#x53D1;&amp;&#x7F16;&#x8F91;&#x73AF;&#x5883;</h1>
+<ul>
+<li>Linux &amp; Mac OS X ,&#x5C3D;&#x91CF;&#x4E0D;&#x8981;window&#x4E0B;&#x7F16;&#x8F91;&#xFF0C;&#x4E2D;&#x6587;&#x6587;&#x4EF6;&#x540D;&#x5BB9;&#x6613;&#x6CA1;&#x6709;&#x8F6C;&#x7801;&#x800C;&#x5BFC;&#x81F4;&#x9519;&#x8BEF;</li>
+<li>&#x6279;&#x91CF;&#x4FEE;&#x6539;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Sublime Text &#x5F3A;&#x5927;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;</li>
+</ul>
+<h1 id="">&#x6587;&#x4EF6;&#x540D;&#x89C4;&#x8303;</h1>
+<ul>
+<li>&#x8BED;&#x8A00;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x540D;&#x56E0;&#x4E3A;&#x5168;&#x90E8;&#x5C0F;&#x5199;&#xFF0C;&#x4F8B;&#x5982;:<code>md-{lang}</code>,<code>{lang}</code>&#x5168;&#x90E8;&#x4E3A;&#x5C0F;&#x5199;</li>
+<li>&#x5C3D;&#x91CF;&#x4E0D;&#x8981;window&#x4E0B;&#x7F16;&#x8F91;</li>
+<li>&#x6807;&#x70B9;&#x7B26;&#x53F7;
+<ul>
+<li>&#x4E2D;&#x6587;&#x7B26;&#x53F7;&#x4E0D;&#x80FD;&#x7528;(&#x56E0;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x5FD8;&#x8BB0;url encode&#x5C31;404&#x4E86;)&#x6545;&#x7EDF;&#x4E00;&#x4E0D;&#x9002;&#x7528;&#x4E2D;&#x6587;&#x7B26;&#x53F7;&#xFF0C;&#x4F7F;&#x7528;&#x82F1;&#x6587;&#x7B26;&#x53F7;&#x4EE3;&#x66FF;</li>
+<li>NOTE: <strong>&#x6587;&#x4EF6;&#x540D;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<code>:</code></strong>,Linux&#x4E0B;&#x6B63;&#x5E38;&#xFF0C;OS X&#x4E0B;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x4E0D;&#x884C;&#xFF0C;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x8F6C;&#x6210;/ &#xFF0C;windows&#x4E0B;&#x76F4;&#x63A5;&#x8DEA;&#x4E86;:&#x76F4;&#x63A5;&#x622A;&#x65AD;&#x540E;&#x9762;&#x7684;&#xFF0C;<strong>&#x6240;&#x4EE5;&#x4E0D;&#x518D;&#x80FD;&#x4F7F;&#x7528;&#x5192;&#x53F7;&#xFF0C;&#x7528;&#x7A7A;&#x683C;&#x4EE3;&#x66FF;</strong></li>
+<li>&#x8BE6;&#x7EC6;&#x4E2D;&#x82F1;&#x6587;&#x5BF9;&#x5E94;&#xFF0C;&#x8BF7;&#x770B;:<a href="https://github.com/EManual/EManual-CLI/issues/8">emanual-filename</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="markdown">markdown&#x89C4;&#x8303;</h1>
+<ul>
+<li>&#x5C3D;&#x91CF;&#x5C11;&#x7528; <code>-----</code> &#x4F5C;&#x4E3A;h2&#x6807;&#x9898;&#xFF0C;&#x771F;&#x7684;&#x9664;&#x975E;&#x662F;&#x5168;&#x6587;&#x7684;&#x6807;&#x9898;&#x9664;&#x5916;</li>
+</ul>
+<h2 id="">&#x8D44;&#x6599;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2>
+<pre><code>---java
+  ---dist //&#x6253;&#x5305;&#x540E;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x4F8B;&#x5982;&#x6253;&#x5305;&#x6210;zip
+    ----{lang} // `emanual create`&#x751F;&#x6210;&#x7684;&#x5305;&#x542B;info.json&#x7684;markdown&#x6587;&#x4EF6;
+    ----{lang}.zip  //&#x5BF9;&#x5E94;&#x8BED;&#x8A00;&#x7684;&#x6253;&#x5305;
+  ---markdown //&#x4E13;&#x95E8;&#x5B58;&#x653E;markdown&#x76EE;&#x5F55;
+    ---0001-advance
+      ----info.json //&#x5B58;&#x8D2E;&#x672C;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7684;&#x4FE1;&#x606F;
+      ----xx.md
+    ---0002-basic  //YYYY-{name}&#x56DB;&#x4F4D;&#x5E8F;&#x53F7;
+      ----0001-xx.md
+      ----0002-xx.md
+      ----0002-xx.md      
+  ---img //&#x4E13;&#x95E8;&#x5B58;&#x653E;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;
+</code></pre>
+<p><code>info.json</code> (&#x7531;<code>emanual create&#x751F;&#x6210;</code>)</p>
+<pre><code>{
+  &quot;files&quot; :[
+     {
+       &quot;mode&quot;: &quot;{mode}&quot;//&#x53D6;&#x503C;&#x4E3A;file or tree,
+       &quot;name&quot;: &quot;{name}&quot;//&#x5F53;&#x524D;&#x540D;&#x79F0;(&#x62FC;&#x97F3;)
+       &quot;rname&quot;: &quot;{raw_name}&quot;//&#x539F;&#x6765;&#x7684;&#x540D;&#x5B57;&#x4E0D;&#x542B;&#x62FC;&#x97F3;
+       &#x201C;path&#x201D;: &quot;{path}&quot;//&#x8868;&#x793A;&#x6539;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;,&#x4ECE;&#x6839;&#x5F00;&#x59CB;(&#x6CE8;&#x610F;:&#x6307;&#x7684;&#x662F;&#x8D44;&#x6E90;&#x5305;&#x5F97;&#x6839;&#x76EE;&#x5F55;,&#x4F8B;&#x5982;&#x8FD9;&#x4E2A;`/java`)
+       &quot;mtime&quot;:{mtime}//&#x6700;&#x540E;&#x4FEE;&#x6539;&#x65F6;&#x95F4;,&#x5355;&#x4F4D;:&#x79D2;
+     }
+  ],
+  &quot;mode&quot;:&quot;{&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x7C7B;&#x578B;}&quot;
+  &quot;name&quot;:&quot;{&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x540D;}&quot;,
+  &quot;rname&quot;: &quot;{&#x539F;&#x6765;&#x7684;&#x540D;&#x5B57;&#x4E0D;&#x542B;&#x62FC;&#x97F3;}&quot;,
+  &quot;path&quot;:&quot;{&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;}&quot;
+  &quot;mtime&quot;:&quot;{&#x6700;&#x540E;&#x4FEE;&#x6539;&#x65F6;&#x95F4;}&quot;
+}
+</code></pre>
+<h2 id="markdown">markdown&#x56FE;&#x7247;</h2>
+<ul>
+<li>&#x907F;&#x514D;&#x51FA;&#x73B0;&#x56FE;&#x7247;</li>
+<li>&#x5747;&#x653E;&#x7F6E;&#x5728;<code>img/</code></li>
+<li>&#x56FE;&#x7247;&#x547D;&#x540D;&#x89C4;&#x5219;&#xFF1A;yyyy-mm-dd-nn(&#x5E74; &#x6708; &#x65E5; &#x7B2C;&#x51E0;&#x5F20;)</li>
+</ul>
+<pre><code>![title](http://www.ieemanual.com/md-java/img/xxx.png)
+</code></pre>
+<h1 id="">&#x65B0;&#x95FB;&#x8D44;&#x8BAF;&#x6A21;&#x5757;</h1>
+<blockquote>
+<p>&#x7C7B;&#x4F3C;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x6A21;&#x5757;&#x7ED3;&#x6784;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x5F02;&#x540C;,&#x5BF9;&#x4ED6;&#x63D0;&#x51FA;&#x4E86;&#x7279;&#x522B;&#x7684;&#x9700;&#x6C42;</p>
+</blockquote>
+<ul>
+<li>&#x652F;&#x6301;&#x5206;&#x9875;(<code>{page}.json</code>,404&#x627E;&#x4E0D;&#x5230;&#x8BE5;&#x9875;&#x8BF4;&#x660E;&#x4E0D;&#x80FD;&#x7FFB;&#x9875;&#x4E86;)</li>
+<li>&#x652F;&#x6301;&#x5185;&#x5BB9;&#x9884;&#x89C8;(&#x6BB5;&#x843D;&#x663E;&#x793A;&#x524D;10-30&#x4E2A;&#x5B57;)</li>
+<li>&#x629B;&#x5F03;<code>info.json</code>&#xFF0C;&#x56E0;&#x4E3A;&#x5185;&#x5BB9;&#x592A;&#x5C11;&#xFF0C;&#x6709;&#x7528;&#x4FE1;&#x606F;&#x53EA;&#x6709;<code>page</code>(&#x9875;&#x7801;)</li>
+</ul>
+<h2 id="">&#x65B0;&#x95FB;&#x8D44;&#x8BAF;&#x6587;&#x7AE0;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2>
+<pre><code>---java
+  ---dist //&#x6253;&#x5305;&#x540E;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x4F8B;&#x5982;&#x6253;&#x5305;&#x6210;zip
+    ----1.json //&#x7B2C;&#x4E00;&#x9875;&#x4FE1;&#x606F;
+    ----2.json 
+       ....
+    ----{page}.json 
+    ----newsfeeds //&#x5BF9;`../markdown`&#x76EE;&#x5F55;&#x9884;&#x5904;&#x7406;&#x597D;(&#x62FC;&#x97F3;&#x8F6C;&#x6362;)
+  ---markdown //&#x4E13;&#x95E8;&#x5B58;&#x653E;markdown&#x76EE;&#x5F55;
+    ---2014
+      ----2014-01-01-xxxxx.md
+    ---2015
+      ----2015-01-01-xxxxx.md   
+  ---img //&#x4E13;&#x95E8;&#x5B58;&#x653E;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;
+</code></pre>
+<p><code>{page}.json</code></p>
+<pre><code class="lang-json">[
+    {
+        &quot;<span class="pl-e">name</span>&quot;:<span class="pl-s"><span class="pl-s">&quot;{&#x62FC;&#x97F3;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x540D;&#x79F0;}&quot;</span></span>,
+        &quot;<span class="pl-e">rname</span>&quot;:<span class="pl-s"><span class="pl-s">&quot;{&#x4E3A;&#x8F6C;&#x6362;&#x7684;&#x540D;&#x79F0;}&quot;</span></span>, 
+        &quot;<span class="pl-e">path</span>&quot;:<span class="pl-s"><span class="pl-s">&quot;{newsfeeds/a/b/c}&quot;</span> //&#x62FC;&#x97F3;&#x8F6C;&#x6362;&#x597D;&#x7684;&#x8DEF;&#x5F84;
+        <span class="pl-s">&quot;description&quot;</span>:<span class="pl-s">&quot;{10-20&#x5B57;&#x7684;&#x7B80;&#x4ECB;}&quot;</span></span>,
+        
+     }
+]
+</code></pre>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="index.html"><span class="title">EManual</span></a></div>
+          <div class="right"><a href="md-release.html"><span class="label">Next: </span><span class="title">发布新版本</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="index.html" class="link title  link-index">EManual</a>
+            </li>
+            <li class="menu-item -level-1"><a href="draft.html" class="link title -active link-draft">草案</a>
+              <ul class="headings heading-list">
+                <li class="heading-item -depth-2"><a href="#" class="hlink link-">资料文件目录结构</a>
+                </li>
+                <li class="heading-item -depth-2"><a href="#markdown" class="hlink link-markdown">markdown图片</a>
+                </li>
+                <li class="heading-item -depth-2"><a href="#" class="hlink link-">新闻资讯文章目录结构</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="md-release.html" class="link title  link-md-release">发布新版本</a>
+            </li>
+            <li class="menu-item -level-1"><a href="feedback.html" class="link title  link-feedback">反馈</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

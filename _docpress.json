@@ -1,0 +1,154 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "EManual",
+        "source": "docs/intro.md",
+        "url": "index.html",
+        "slug": "index"
+      },
+      {
+        "title": "草案",
+        "source": "docs/draft.md",
+        "url": "draft.html",
+        "slug": "draft",
+        "headings": [
+          {
+            "title": "资料文件目录结构",
+            "depth": 2,
+            "id": ""
+          },
+          {
+            "title": "markdown图片",
+            "depth": 2,
+            "id": "markdown"
+          },
+          {
+            "title": "新闻资讯文章目录结构",
+            "depth": 2,
+            "id": ""
+          }
+        ]
+      },
+      {
+        "title": "发布新版本",
+        "source": "docs/md-release.md",
+        "url": "md-release.html",
+        "slug": "md-release",
+        "headings": [
+          {
+            "title": "the release module",
+            "depth": 2,
+            "id": "the-release-module"
+          },
+          {
+            "title": "file structure",
+            "depth": 2,
+            "id": "file-structure",
+            "headings": [
+              {
+                "title": "`info.json`",
+                "depth": 3,
+                "id": "info.json"
+              },
+              {
+                "title": "`CHANGELOG.md` format",
+                "depth": 3,
+                "id": "changelog.md-format"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "反馈",
+        "source": "docs/feedback.md",
+        "url": "feedback.html",
+        "slug": "feedback",
+        "headings": [
+          {
+            "title": "用户反馈模块",
+            "depth": 2,
+            "id": ""
+          }
+        ]
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "docs/intro.md",
+      "title": "EManual",
+      "slug": "index"
+    },
+    "draft.html": {
+      "source": "docs/draft.md",
+      "title": "草案",
+      "slug": "draft",
+      "headings": [
+        {
+          "title": "资料文件目录结构",
+          "depth": 2,
+          "id": ""
+        },
+        {
+          "title": "markdown图片",
+          "depth": 2,
+          "id": "markdown"
+        },
+        {
+          "title": "新闻资讯文章目录结构",
+          "depth": 2,
+          "id": ""
+        }
+      ]
+    },
+    "md-release.html": {
+      "source": "docs/md-release.md",
+      "title": "发布新版本",
+      "slug": "md-release",
+      "headings": [
+        {
+          "title": "the release module",
+          "depth": 2,
+          "id": "the-release-module"
+        },
+        {
+          "title": "file structure",
+          "depth": 2,
+          "id": "file-structure",
+          "headings": [
+            {
+              "title": "`info.json`",
+              "depth": 3,
+              "id": "info.json"
+            },
+            {
+              "title": "`CHANGELOG.md` format",
+              "depth": 3,
+              "id": "changelog.md-format"
+            }
+          ]
+        }
+      ]
+    },
+    "feedback.html": {
+      "source": "docs/feedback.md",
+      "title": "反馈",
+      "slug": "feedback",
+      "headings": [
+        {
+          "title": "用户反馈模块",
+          "depth": 2,
+          "id": ""
+        }
+      ]
+    }
+  },
+  "sources": {
+    "docs/intro.md": "index.html",
+    "docs/draft.md": "draft.html",
+    "docs/md-release.md": "md-release.html",
+    "docs/feedback.md": "feedback.html"
+  }
+}
