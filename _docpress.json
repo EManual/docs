@@ -18,9 +18,19 @@
                 "id": ""
               },
               {
-                "title": "发布",
+                "title": "本地预览",
                 "depth": 3,
                 "id": ""
+              },
+              {
+                "title": "发布到`gh-pages`",
+                "depth": 3,
+                "id": "gh-pages"
+              },
+              {
+                "title": "提交修改并推送到GitHub",
+                "depth": 3,
+                "id": "github"
               }
             ]
           }
@@ -36,6 +46,21 @@
             "slug": "v2draft",
             "headings": [
               {
+                "title": "开发&编辑环境",
+                "depth": 2,
+                "id": "and"
+              },
+              {
+                "title": "文件名规范",
+                "depth": 2,
+                "id": ""
+              },
+              {
+                "title": "markdown规范",
+                "depth": 2,
+                "id": "markdown"
+              },
+              {
                 "title": "资料文件目录结构",
                 "depth": 2,
                 "id": ""
@@ -44,6 +69,11 @@
                 "title": "markdown图片",
                 "depth": 2,
                 "id": "markdown"
+              },
+              {
+                "title": "新闻资讯模块",
+                "depth": 2,
+                "id": ""
               },
               {
                 "title": "新闻资讯文章目录结构",
@@ -59,26 +89,19 @@
             "slug": "v2md-release",
             "headings": [
               {
-                "title": "发布模块",
+                "title": "文件目录结构",
                 "depth": 2,
                 "id": ""
               },
               {
-                "title": "file structure",
+                "title": "`info.json`",
                 "depth": 2,
-                "id": "file-structure",
-                "headings": [
-                  {
-                    "title": "`info.json`",
-                    "depth": 3,
-                    "id": "info.json"
-                  },
-                  {
-                    "title": "`CHANGELOG.md` format",
-                    "depth": 3,
-                    "id": "changelog.md-format"
-                  }
-                ]
+                "id": "info.json"
+              },
+              {
+                "title": "`CHANGELOG.md` 格式",
+                "depth": 2,
+                "id": "changelog.md"
               }
             ]
           },
@@ -92,6 +115,24 @@
                 "title": "用户反馈模块",
                 "depth": 2,
                 "id": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "v3.x",
+        "sections": [
+          {
+            "title": "开发规范",
+            "source": "docs/v3/draft.md",
+            "url": "v3/draft.html",
+            "slug": "v3draft",
+            "headings": [
+              {
+                "title": "TO BE DONE",
+                "depth": 2,
+                "id": "to-be-done"
               }
             ]
           }
@@ -116,9 +157,19 @@
               "id": ""
             },
             {
-              "title": "发布",
+              "title": "本地预览",
               "depth": 3,
               "id": ""
+            },
+            {
+              "title": "发布到`gh-pages`",
+              "depth": 3,
+              "id": "gh-pages"
+            },
+            {
+              "title": "提交修改并推送到GitHub",
+              "depth": 3,
+              "id": "github"
             }
           ]
         }
@@ -130,6 +181,21 @@
       "slug": "v2draft",
       "headings": [
         {
+          "title": "开发&编辑环境",
+          "depth": 2,
+          "id": "and"
+        },
+        {
+          "title": "文件名规范",
+          "depth": 2,
+          "id": ""
+        },
+        {
+          "title": "markdown规范",
+          "depth": 2,
+          "id": "markdown"
+        },
+        {
           "title": "资料文件目录结构",
           "depth": 2,
           "id": ""
@@ -138,6 +204,11 @@
           "title": "markdown图片",
           "depth": 2,
           "id": "markdown"
+        },
+        {
+          "title": "新闻资讯模块",
+          "depth": 2,
+          "id": ""
         },
         {
           "title": "新闻资讯文章目录结构",
@@ -152,26 +223,19 @@
       "slug": "v2md-release",
       "headings": [
         {
-          "title": "发布模块",
+          "title": "文件目录结构",
           "depth": 2,
           "id": ""
         },
         {
-          "title": "file structure",
+          "title": "`info.json`",
           "depth": 2,
-          "id": "file-structure",
-          "headings": [
-            {
-              "title": "`info.json`",
-              "depth": 3,
-              "id": "info.json"
-            },
-            {
-              "title": "`CHANGELOG.md` format",
-              "depth": 3,
-              "id": "changelog.md-format"
-            }
-          ]
+          "id": "info.json"
+        },
+        {
+          "title": "`CHANGELOG.md` 格式",
+          "depth": 2,
+          "id": "changelog.md"
         }
       ]
     },
@@ -186,12 +250,25 @@
           "id": ""
         }
       ]
+    },
+    "v3/draft.html": {
+      "source": "docs/v3/draft.md",
+      "title": "开发规范",
+      "slug": "v3draft",
+      "headings": [
+        {
+          "title": "TO BE DONE",
+          "depth": 2,
+          "id": "to-be-done"
+        }
+      ]
     }
   },
   "sources": {
     "README.md": "index.html",
     "docs/v2/draft.md": "v2/draft.html",
     "docs/v2/md-release.md": "v2/md-release.html",
-    "docs/v2/feedback.md": "v2/feedback.html"
+    "docs/v2/feedback.md": "v2/feedback.html",
+    "docs/v3/draft.md": "v3/draft.html"
   }
 }
