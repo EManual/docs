@@ -10,13 +10,26 @@
 $ npm install -g docpress
 ```
 
-* 同步文档到GitHub Pages
+* 同步文档到GitHub Pages工具[git-update-ghpages](https://github.com/rstacruz/git-update-ghpages)
+
 ```
 $ npm install -g git-update-ghpages
 ```
 
-### 发布
+### 本地预览
+
+```
+$ make serve
+```
+
+### 发布到`gh-pages`
 
 ```
 $ make deploy
+```
+
+### 提交修改并推送到GitHub
+
+```
+$ make commit && make push
 ```

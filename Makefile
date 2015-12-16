@@ -1,14 +1,14 @@
 main:
-	@echo 'hello world!'
+	@echo 'Welcome to eManual docs!'
 
 commit:
 	@git add ./docs
-	@git commit -m 'Update at ${shell date}'
+	@git commit -m 'Update docs/ at ${shell date}'
 
 push:
 	@git push origin master
 
-server:
+serve:
 	@docpress s
 
 deploy:
