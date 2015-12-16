@@ -1,8 +1,11 @@
-[编程助手开发文档](http://emanual.github.io/docs)
+编程助手开发文档
+------
+
+在你参与EManual开发、学习前，请查看本文档，包含一些规范和约定。
 
 ### 安装
 
-* 文档生成工具
+* 文档生成工具docpress
 ```
 $ npm install -g docpress
 ```
