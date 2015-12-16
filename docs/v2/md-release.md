@@ -1,7 +1,4 @@
-发布模块
------
-
-## file structure
+## 文件目录结构
 
 ```
 ---dist
@@ -12,7 +9,7 @@
 ---README.md
 ```
 
-### `info.json`
+## `info.json`
 
 ```json  
 {
@@ -28,7 +25,7 @@
 }
 ```
 
-### `CHANGELOG.md` format
+## `CHANGELOG.md` 格式
 
 ```
 ### vX.Y.Z @YY-MM-DD
