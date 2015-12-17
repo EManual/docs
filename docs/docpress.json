@@ -1,0 +1,12 @@
+{
+  "github": "EManual/docs",
+  "css": [
+    "http://ricostacruz.com/docpress-rsc/style.css"
+  ],
+  "markdown": {
+    "typographer": true,
+    "plugins": {
+      "decorate": true
+    }
+  }
+}

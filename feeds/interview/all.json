@@ -1,0 +1,13 @@
+[
+    {
+        "name": "java",
+        "md5": "xxxx",
+        "icon_url": "", // 16*16
+        //mirror
+        "urls": [
+            "http://us.iemanual.com/xxx/yy.tar",
+            "http://cn.iemanual.com/xxx/yy.tar"
+        ]
+    }
+    ......
+]
