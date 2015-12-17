@@ -37,6 +37,44 @@
         ]
       },
       {
+        "title": "v3.x",
+        "sections": [
+          {
+            "title": "开发规范",
+            "source": "docs/v3/draft.md",
+            "url": "v3/draft.html",
+            "slug": "v3draft",
+            "headings": [
+              {
+                "title": "理念",
+                "depth": 2,
+                "id": ""
+              },
+              {
+                "title": "开发&编辑环境",
+                "depth": 2,
+                "id": "and"
+              },
+              {
+                "title": "文件名规范",
+                "depth": 2,
+                "id": ""
+              },
+              {
+                "title": "模块源",
+                "depth": 2,
+                "id": ""
+              },
+              {
+                "title": "面试模块",
+                "depth": 2,
+                "id": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
         "title": "v2.x",
         "sections": [
           {
@@ -119,24 +157,6 @@
             ]
           }
         ]
-      },
-      {
-        "title": "v3.x",
-        "sections": [
-          {
-            "title": "开发规范",
-            "source": "docs/v3/draft.md",
-            "url": "v3/draft.html",
-            "slug": "v3draft",
-            "headings": [
-              {
-                "title": "TO BE DONE",
-                "depth": 2,
-                "id": "to-be-done"
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -172,6 +192,38 @@
               "id": "github"
             }
           ]
+        }
+      ]
+    },
+    "v3/draft.html": {
+      "source": "docs/v3/draft.md",
+      "title": "开发规范",
+      "slug": "v3draft",
+      "headings": [
+        {
+          "title": "理念",
+          "depth": 2,
+          "id": ""
+        },
+        {
+          "title": "开发&编辑环境",
+          "depth": 2,
+          "id": "and"
+        },
+        {
+          "title": "文件名规范",
+          "depth": 2,
+          "id": ""
+        },
+        {
+          "title": "模块源",
+          "depth": 2,
+          "id": ""
+        },
+        {
+          "title": "面试模块",
+          "depth": 2,
+          "id": ""
         }
       ]
     },
@@ -250,25 +302,14 @@
           "id": ""
         }
       ]
-    },
-    "v3/draft.html": {
-      "source": "docs/v3/draft.md",
-      "title": "开发规范",
-      "slug": "v3draft",
-      "headings": [
-        {
-          "title": "TO BE DONE",
-          "depth": 2,
-          "id": "to-be-done"
-        }
-      ]
     }
   },
   "sources": {
     "README.md": "index.html",
+    "docs/v3/draft.md": "v3/draft.html",
     "docs/v2/draft.md": "v2/draft.html",
     "docs/v2/md-release.md": "v2/md-release.html",
     "docs/v2/feedback.md": "v2/feedback.html",
-    "docs/v3/draft.md": "v3/draft.html"
+    "docs/docpress.json": "docpress.json"
   }
 }

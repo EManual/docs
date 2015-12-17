@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
     <script src="../assets/script.js?t=2bcc4b59"></script>
     <title>开发规范</title>
     <meta name="viewport" content="width=device-width">
@@ -12,20 +13,110 @@
       <div class="toggle menu-toggle js-menu-toggle"></div>
       <div class="body page-v3draft">
         <div class="header-nav">
-          <div class="right">
+          <div class="right"><a href="https://github.com/EManual/docs" data-title="EManual/docs" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body"><h2 id="to-be-done">TO BE DONE</h2>
+        <div class="markdown-body"><h2 id="">&#x7406;&#x5FF5;</h2>
+<blockquote>
+<p>&#x4E07;&#x7269;&#x7686;Markdown&#x3002;</p>
+</blockquote>
+<p>&#x7528;markdown&#x53BB;&#x8868;&#x793A;&#x4E00;&#x5207;</p>
+<h2 id="and">&#x5F00;&#x53D1;&amp;&#x7F16;&#x8F91;&#x73AF;&#x5883;</h2>
+<ul>
+<li>Linux &amp; Mac OS X ,&#x5C3D;&#x91CF;&#x4E0D;&#x8981;window&#x4E0B;&#x7F16;&#x8F91;&#xFF0C;&#x4E2D;&#x6587;&#x6587;&#x4EF6;&#x540D;&#x5BB9;&#x6613;&#x6CA1;&#x6709;&#x8F6C;&#x7801;&#x800C;&#x5BFC;&#x81F4;&#x9519;&#x8BEF;</li>
+<li>&#x6279;&#x91CF;&#x4FEE;&#x6539;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Sublime Text &#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;</li>
+</ul>
+<h2 id="">&#x6587;&#x4EF6;&#x540D;&#x89C4;&#x8303;</h2>
+<ul>
+<li>&#x8BED;&#x8A00;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x540D;&#x56E0;&#x4E3A;&#x5168;&#x90E8;&#x5C0F;&#x5199;&#xFF0C;&#x4F8B;&#x5982;:<code>md-{lang}</code>,<code>{lang}</code>&#x5168;&#x90E8;&#x4E3A;&#x5C0F;&#x5199;</li>
+<li>&#x5C3D;&#x91CF;&#x4E0D;&#x8981;window&#x4E0B;&#x7F16;&#x8F91;</li>
+<li>&#x6807;&#x70B9;&#x7B26;&#x53F7;
+<ul>
+<li>&#x4E2D;&#x6587;&#x7B26;&#x53F7;&#x4E0D;&#x80FD;&#x7528;(&#x56E0;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x5FD8;&#x8BB0;url encode&#x5C31;404&#x4E86;)&#x6545;&#x7EDF;&#x4E00;&#x4E0D;&#x9002;&#x7528;&#x4E2D;&#x6587;&#x7B26;&#x53F7;&#xFF0C;&#x4F7F;&#x7528;&#x82F1;&#x6587;&#x7B26;&#x53F7;&#x4EE3;&#x66FF;</li>
+<li>NOTE: <strong>&#x6587;&#x4EF6;&#x540D;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;<code>:</code></strong>,Linux&#x4E0B;&#x6B63;&#x5E38;&#xFF0C;OS X&#x4E0B;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x4E0D;&#x884C;&#xFF0C;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x8F6C;&#x6210;/ &#xFF0C;windows&#x4E0B;&#x76F4;&#x63A5;&#x8DEA;&#x4E86;:&#x76F4;&#x63A5;&#x622A;&#x65AD;&#x540E;&#x9762;&#x7684;&#xFF0C;<strong>&#x6240;&#x4EE5;&#x4E0D;&#x518D;&#x80FD;&#x4F7F;&#x7528;&#x5192;&#x53F7;&#xFF0C;&#x7528;&#x7A7A;&#x683C;&#x4EE3;&#x66FF;</strong></li>
+<li>&#x8BE6;&#x7EC6;&#x4E2D;&#x82F1;&#x6587;&#x5BF9;&#x5E94;&#xFF0C;&#x8BF7;&#x770B;:<a href="https://github.com/EManual/EManual-CLI/issues/8">emanual-filename</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="">&#x6A21;&#x5757;&#x6E90;</h2>
+<p>&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</p>
+<pre><code>    feeds
+    &#x251C;&#x2500;&#x2500; interview  // &#x9762;&#x8BD5;
+    &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; java-xxx.json //javaXX&#x9762;&#x8BD5;&#x9898;&#x76EE;
+    &#x2514;&#x2500;&#x2500; modules // &#x5404;&#x7C7B;&#x6559;&#x7A0B;
+        &#x2514;&#x2500;&#x2500; php-the-right-way.json //php-the-right-way.json
+</code></pre>
+<p>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;module&#x7684;json&#x683C;&#x5F0F;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-json">{
+    &quot;name&quot;: &quot;java&quot;,
+    &quot;md5&quot;: &quot;xxxx&quot;, //&#x524D;5&#x4F4D;&#x5373;&#x53EF;
+    &quot;icon_url&quot;: &quot;&quot;, // &#x56FE;&#x7247;&#x94FE;&#x63A5; 16*16@1x
+    //&#x4E0B;&#x8F7D;&#x94FE;&#x63A5;
+    &quot;url&quot;: &quot;http://us.iemanual.com/xxx/yy.tar&quot;
+}
+</code></pre>
+<p>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;interview&#x7684;json&#x683C;&#x5F0F;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-json">{
+    &quot;name&quot;: &quot;java&quot;,
+    &quot;md5&quot;: &quot;xxxx&quot;, //&#x524D;5&#x4F4D;&#x5373;&#x53EF;
+    &quot;icon_url&quot;: &quot;&quot;, // &#x56FE;&#x7247;&#x94FE;&#x63A5; 16*16@1x
+    //mirror
+    &quot;url&quot;: &quot;http://us.iemanual.com/xxx/yy.tar&quot;
+}
+</code></pre>
+<h2 id="">&#x9762;&#x8BD5;&#x6A21;&#x5757;</h2>
+<p>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x9762;&#x8BD5;&#x9898;&#x76EE;<code>questionA.md</code></p>
+<pre><code class="lang-text">    - type: Reply   //&#x5FC5;&#x586B; &#x5224;&#x65AD;judgment &#x5355;&#x9009;Radio &#x591A;&#x9009;choice &#x56DE;&#x7B54;Reply
+    - tag: &#x524D;&#x7AEF; node.js npm //&#x53EF;&#x9009;
+    - difficulty:  1 //&#x53EF;&#x9009;&#xFF0C;0-5&#xFF0C;&#x9ED8;&#x8BA4;0
+    - from: &apos;Google 2015&#x7B14;&#x8BD5;&apos;
+
+    --------  // &#x5206;&#x5272;&#x7EBF;&#xFF0C;&#x4E0A;&#x4E0B;&#x81F3;&#x5C11;&#x4E00;&#x4E2A;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x884C;
+
+    &#x5728;android&#x4E2D;&#x4F7F;&#x7528;SQLiteOpenHelper&#x8FD9;&#x4E2A;&#x8F85;&#x52A9;&#x7C7B;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x662F;()
+
+    //&#x5982;&#x679C;&#x662F;&#x6709;&#x9009;&#x9879;&#x7684;&#x8BDD;
+    ```option
+    A&#x3001;getWriteableDatabase()
+    B&#x3001;getReadableDatabase()
+    C&#x3001;getDatabase()
+    D&#x3001;getAbleDatabase()
+    ```
+
+    ---------
+
+    &#x7B54;&#x6848;&#xFF1A;AB
+</code></pre>
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../v2/feedback.html"><span class="title">用户反馈</span></a></div>
+          <div class="left"><a href="../index.html"><span class="title">编程助手开发文档</span></a></div>
+          <div class="right"><a href="../v2/draft.html"><span class="label">Next: </span><span class="title">开发规范</span></a></div>
         </div>
       </div>
       <div class="menu toc-menu">
         <li class="menu-item -level-0 -parent">
           <ul class="submenu">
             <li class="menu-item -level-1"><a href="../index.html" class="link title  link-index">编程助手开发文档</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">v3.x</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="../v3/draft.html" class="link title -active link-v3draft">开发规范</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#" class="hlink link-">理念</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#and" class="hlink link-and">开发&amp;编辑环境</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#" class="hlink link-">文件名规范</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#" class="hlink link-">模块源</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#" class="hlink link-">面试模块</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li class="menu-item -level-1 -parent"><span class="title">v2.x</span>
               <ul class="submenu">
@@ -34,16 +125,6 @@
                 <li class="menu-item -level-2"><a href="../v2/md-release.html" class="link title  link-v2md-release">发布新版</a>
                 </li>
                 <li class="menu-item -level-2"><a href="../v2/feedback.html" class="link title  link-v2feedback">用户反馈</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item -level-1 -parent"><span class="title">v3.x</span>
-              <ul class="submenu">
-                <li class="menu-item -level-2"><a href="../v3/draft.html" class="link title -active link-v3draft">开发规范</a>
-                  <ul class="headings heading-list">
-                    <li class="heading-item -depth-2"><a href="#to-be-done" class="hlink link-to-be-done">TO BE DONE</a>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </li>
