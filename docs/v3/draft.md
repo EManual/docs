@@ -55,11 +55,27 @@
 ```
 
 
-## book模块
+## Book模块
 
-本想自订一套规范，但是GitBook的已经做得挺完善，于是采用gitbook作为一个规范
+本想自订一套规范，但是GitBook的已经做得挺完善，于是采用gitbook作为一个规范: 用一份含有TOC(table of content)的
+的markdown来组织整个模块的内容。
 
-用一份`SUMMERY.md`来组织整本书的TOC(Table of content),也就是目录了
+一般的目录结构
+
+```
+├── README.md
+├── SUMMARY.md
+├── build
+│   ├── README.md
+│   └── visibility.md
+├── styles
+│   └── website.css
+└── styling
+    ├── book.md
+    └── homepage.md
+```
+
+用一份`SUMMERY.md`来组织整本书的TOC(table of content),也就是目录了
 
 例如
 ```
@@ -78,20 +94,24 @@
 {
     "summery": [
         {
-            "name":"Introduction",   //名称
-            "file": "README.md"  //对应的markdown文件
+            "title":"Introduction",   //名称
+            "source": "README.md"  //对应的markdown文件
+            "url": "index.html"
         },
         {
-            "name":"Build",   
-            "file": "build/README.md", //需要渲染？
-            "children": [   //子目录
+            "title":"Build",   
+            "file": "build/README.md",
+            "url": "build/index.html"
+            "sections": [   //子目录
                 {
-                    "name":"Update with GIT",   
-                    "file": "build/README.md"  
+                    "title":"Update with GIT",   
+                    "source": "build/push.md",
+                    "url": "build/push.html"
                 },
                 {
-                    "name":"Introduction",
-                    "file": "build/ebook-convert"  
+                    "title":"Introduction",
+                    "source": "build/ebook-convert.md",
+                    "url": "build/ebookconvert.html"
                 }
             ]
         }
@@ -101,12 +121,12 @@
 
 
 
-## interview模块
+## Interview模块
 
 描述一个面试题目`questionA.md`
 
 ```text
-    - type: Reply   //必填 判断judgment 单选Radio 多选choice 回答Reply
+    - type: reply   //必填 判断judgment 单选radio 多选choice 回答reply
     - tag: 前端 node.js npm //可选
     - difficulty:  1 //可选，0-5，默认0
     - from: 'Google 2015笔试'
@@ -127,3 +147,29 @@
 
     答案：AB
 ```
+
+根据markdown 可以编译成这么一份`questionA.json`:
+
+```json
+{
+    "type": "reply",
+    "tag": ["前端", "node.js", "npm"],
+    "difficulty": 1 ,
+    "from": "Google 2015笔试",
+    "description": "{试题的markdown内容}",
+    "option": [
+        "A、getWriteableDatabase()",
+        "B、getReadableDatabase()",
+        "C、getDatabase()",
+        "D、getAbleDatabase()"
+    ],
+    "answer": "{试题的markdown 答案}"
+}
+```
+
+同样地，需要通过`SUMMERY.md`解析生成一份`summery.json`
+
+
+## 搜索(Index)支持?
+
+TO BE DONE
