@@ -66,9 +66,19 @@
                 "id": ""
               },
               {
-                "title": "面试模块",
+                "title": "Book模块",
                 "depth": 2,
-                "id": ""
+                "id": "book"
+              },
+              {
+                "title": "Interview模块",
+                "depth": 2,
+                "id": "interview"
+              },
+              {
+                "title": "搜索(Index)支持?",
+                "depth": 2,
+                "id": "(index)"
               }
             ]
           }
@@ -221,9 +231,19 @@
           "id": ""
         },
         {
-          "title": "面试模块",
+          "title": "Book模块",
           "depth": 2,
-          "id": ""
+          "id": "book"
+        },
+        {
+          "title": "Interview模块",
+          "depth": 2,
+          "id": "interview"
+        },
+        {
+          "title": "搜索(Index)支持?",
+          "depth": 2,
+          "id": "(index)"
         }
       ]
     },
