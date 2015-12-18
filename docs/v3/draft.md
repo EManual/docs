@@ -26,7 +26,7 @@
     feeds
     ├── interview  // 面试
     │   └── java-xxx.json //javaXX面试题目
-    └── modules // 各类教程
+    └── book // 各类教程
         └── php-the-right-way.json //php-the-right-way.json
 ```
 
@@ -42,7 +42,7 @@
 }
 ```
 
-描述一个interview的json格式如下
+描述一份interview的json格式如下
 
 ```json
 {
@@ -55,7 +55,53 @@
 ```
 
 
-## 面试模块
+## book模块
+
+本想自订一套规范，但是GitBook的已经做得挺完善，于是采用gitbook作为一个规范
+
+用一份`SUMMERY.md`来组织整本书的TOC(Table of content),也就是目录了
+
+例如
+```
+# Summary
+
+* [Introduction](README.md)   //第一个首页
+* [Build](build/README.md)
+   * [Update with GIT](build/push.md)
+   * [ebook-convert](build/ebookconvert.md)
+.......
+```
+
+同时需要通过`SUMMERY.md`解析生成一份`summery.json`。对应上述的生成如下
+
+```
+{
+    "summery": [
+        {
+            "name":"Introduction",   //名称
+            "file": "README.md"  //对应的markdown文件
+        },
+        {
+            "name":"Build",   
+            "file": "build/README.md", //需要渲染？
+            "children": [   //子目录
+                {
+                    "name":"Update with GIT",   
+                    "file": "build/README.md"  
+                },
+                {
+                    "name":"Introduction",
+                    "file": "build/ebook-convert"  
+                }
+            ]
+        }
+    ]
+}
+```
+
+
+
+## interview模块
 
 描述一个面试题目`questionA.md`
 
@@ -69,7 +115,7 @@
 
     在android中使用SQLiteOpenHelper这个辅助类时，可以生成一个数据库，并可以对数据库版本进行管理的方法可以是()
 
-    //如果是有选项的话
+    //如果是有选项的话(每一行一个选项)
     ```option
     A、getWriteableDatabase()
     B、getReadableDatabase()
@@ -77,7 +123,7 @@
     D、getAbleDatabase()
     ```
 
-    ---------
+    ---------// 分割线，上下至少一个有一个空行
 
     答案：AB
 ```
