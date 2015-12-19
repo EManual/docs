@@ -126,7 +126,7 @@
 描述一个面试题目`questionA.md`
 
 ```text
-    - type: reply   //必填 判断judgment 单选radio 多选choice 回答reply
+    - type: reply   //必填 判断judgment 选择choice 回答reply
     - tag: 前端 node.js npm //可选
     - difficulty:  1 //可选，0-5，默认0
     - from: 'Google 2015笔试'
