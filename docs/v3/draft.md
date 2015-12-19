@@ -92,33 +92,52 @@
 
 ```
 {
-    "summery": [
+    "chapters": [  //章节
         {
             "title":"Introduction",   //名称
-            "source": "README.md"  //对应的markdown文件
-            "url": "index.html"
+            "path": "README.md"  //对应的markdown文件
+            "url": "index.html",
+            "level": "0",
+            "exists": true, //是否存在
+            "external": false,  // 是否是外部链接(e.g http://a.com/Readme.md)
+            "introduction": true, //是否介绍页
+            "articles": [] //文章列表
         },
         {
             "title":"Build",   
-            "file": "build/README.md",
+            "path": "build/README.md",
             "url": "build/index.html"
-            "sections": [   //子目录
+            "level": "1",
+            "exists": true, //是否存在
+            "external": false,  // 是否是外部链接(e.g http://a.com/Readme.md)
+            "introduction": true, //是否介绍页
+            "articles": [] //文章列表
+            "articles": [   //子目录
                 {
                     "title":"Update with GIT",   
-                    "source": "build/push.md",
-                    "url": "build/push.html"
+                    "path": "build/push.md",
+                    "url": "build/push.html",
+                    "level": "1.1",
+                    "exists": true, //是否存在
+                    "external": false,  // 是否是外部链接(e.g http://a.com/Readme.md)
+                    "introduction": false, //是否介绍页
+                    "articles": [] //文章列表
                 },
                 {
                     "title":"Introduction",
-                    "source": "build/ebook-convert.md",
-                    "url": "build/ebookconvert.html"
+                    "path": "build/ebook-convert.md",
+                    "url": "build/ebookconvert.html",
+                    "level": "1.2",
+                    "exists": true, //是否存在
+                    "external": false,  // 是否是外部链接(e.g http://a.com/Readme.md)
+                    "introduction": false, //是否介绍页
+                    "articles": [] //文章列表
                 }
             ]
         }
     ]
 }
 ```
-
 
 
 ## Interview模块
