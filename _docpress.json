@@ -167,6 +167,24 @@
             ]
           }
         ]
+      },
+      {
+        "title": "GitBook分析",
+        "source": "docs/gitbook/README.md",
+        "url": "gitbook/index.html",
+        "slug": "gitbook",
+        "headings": [
+          {
+            "title": "gitbook-markdown",
+            "depth": 3,
+            "id": "gitbook-markdown"
+          },
+          {
+            "title": "gitbook-parsers",
+            "depth": 3,
+            "id": "gitbook-parsers"
+          }
+        ]
       }
     ]
   },
@@ -322,6 +340,23 @@
           "id": ""
         }
       ]
+    },
+    "gitbook/index.html": {
+      "source": "docs/gitbook/README.md",
+      "title": "GitBook分析",
+      "slug": "gitbook",
+      "headings": [
+        {
+          "title": "gitbook-markdown",
+          "depth": 3,
+          "id": "gitbook-markdown"
+        },
+        {
+          "title": "gitbook-parsers",
+          "depth": 3,
+          "id": "gitbook-parsers"
+        }
+      ]
     }
   },
   "sources": {
@@ -330,6 +365,7 @@
     "docs/v2/draft.md": "v2/draft.html",
     "docs/v2/md-release.md": "v2/md-release.html",
     "docs/v2/feedback.md": "v2/feedback.html",
+    "docs/gitbook/README.md": "gitbook/index.html",
     "docs/docpress.json": "docpress.json"
   }
 }

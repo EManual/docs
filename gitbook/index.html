@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=a44c9e9d">
+    <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <script src="../assets/script.js?t=2bcc4b59"></script>
+    <title>GitBook分析</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-gitbook">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/EManual/docs" data-title="EManual/docs" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="gitbook-overview">gitbook overview</h1>
+<blockquote>
+<p>docpress bug: &#x5728;&#x4E00;markdown&#x5185;&#x5BB9;&#x9875;&#x65E0;&#x6CD5;&#x5F15;&#x7528;&#x5176;&#x4ED6;markdown d</p>
+</blockquote>
+<p><a href="../v3/draft.html"></a></p>
+<h3 id="gitbook-markdown">gitbook-markdown</h3>
+<p>gitbook&#x7684;&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x89E3;&#x6790;<code>SUMMARY.md</code>, <code>README.md</code>&#x7B49;&#x9884;&#x8BBE;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x7EA6;&#x5B9A;&#x7684;markdown&#x6587;&#x4EF6;&#xFF0C;&#x53EA;&#x4F1A;&#x89E3;&#x6790;&#x57FA;&#x672C;&#x7684;<strong>&#x76EE;&#x5F55;</strong>&#x7ED3;&#x6784;</p>
+<h4 id="gitbook-markdownsummary.md">gitbook-markdown&#x5BF9;<code>SUMMARY.md</code>&#x89E3;&#x6790;</h4>
+<p>exampel:</p>
+<pre><code class="lang-markdown"><span class="hljs-header"># Summary</span>
+
+<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Introduction</span>](<span class="hljs-link_url">README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Format</span>](<span class="hljs-link_url">format/README.md</span>)
+   * [<span class="hljs-link_label">Output</span>](<span class="hljs-link_url">format/output.md</span>)
+   * [<span class="hljs-link_label">Readme and Introduction</span>](<span class="hljs-link_url">format/introduction.md</span>)
+   * [<span class="hljs-link_label">Chapters and Subchapters</span>](<span class="hljs-link_url">format/chapters.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Build</span>](<span class="hljs-link_url">build/README.md</span>)
+  * [<span class="hljs-link_label">Update with GIT</span>](<span class="hljs-link_url">build/push.md</span>)
+  * [<span class="hljs-link_label">Common Errors</span>](<span class="hljs-link_url">build/errors.md</span>)
+  * [<span class="hljs-link_label">ebook-convert</span>](<span class="hljs-link_url">build/ebookconvert.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-link_label">GitHub Integration</span>](<span class="hljs-link_url">github/README.md</span>)
+   * [<span class="hljs-link_label">Transferring content to GitHub</span>](<span class="hljs-link_url">github/transferring_to_github.md</span>)
+</code></pre>
+<p><code>gitbook-markdown</code>&#x89E3;&#x6790;&#x7684;&#x7ED3;&#x6784;&#x662F;:</p>
+<pre><code class="lang-json">{
+    &quot;<span class="pl-e">chapters</span>&quot;: <span class="pl-s">[
+        {
+            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Introduction&quot;</span></span>,
+            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;README.md&quot;</span></span>,
+            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
+        </span>},
+        {
+            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Format&quot;</span></span>,
+            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;format/README.md&quot;</span></span>,
+            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[
+                {
+                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Output&quot;</span></span>,
+                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;format/output.md&quot;</span></span>,
+                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
+                </span>},
+                {
+                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Readme and Introduction&quot;</span></span>,
+                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;format/introduction.md&quot;</span></span>,
+                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
+                </span>},
+                {
+                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Chapters and Subchapters&quot;</span></span>,
+                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;format/chapters.md&quot;</span></span>,
+                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
+                </span>},
+                {
+                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Build&quot;</span></span>,
+                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;build/README.md&quot;</span></span>,
+                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[
+                        {
+                            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Update with GIT&quot;</span></span>,
+                            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;build/push.md&quot;</span></span>,
+                            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
+                        </span>},
+                        {
+                            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Common Errors&quot;</span></span>,
+                            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;build/errors.md&quot;</span></span>,
+                            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
+                        </span>},
+                        {
+                            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;ebook-convert&quot;</span></span>,
+                            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;build/ebookconvert.md&quot;</span></span>,
+                            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
+                        </span>}
+                    ]
+                </span>}
+            ]
+        </span>},
+        {
+            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;GitHub Integration&quot;</span></span>,
+            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;github/README.md&quot;</span></span>,
+            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[
+                {
+                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Transferring content to GitHub&quot;</span></span>,
+                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;github/transferring_to_github.md&quot;</span></span>,
+                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
+                </span>}
+            ]
+        </span>}
+    ]
+</span>}
+</code></pre>
+<p>&#x95EE;&#x9898;&#x6765;&#x4E86;: &#x5982;&#x4F55;&#x8BC6;&#x522B;&#x7AE0;&#x8282;/&#x6587;&#x7AE0;&#xFF1F; &#x76EE;&#x6D4B;&#x4E0A;&#x8FF0;&#x7ED3;&#x6784;&#x53EA;&#x6709;&#x6839;&#x8282;&#x70B9;&#x662F;&#x7AE0;&#x8282;</p>
+<h3 id="gitbook-parsers">gitbook-parsers</h3>
+<p>&#x7528;&#x4E8E;&#x7EC4;&#x7EC7;markdown,assicdoc&#x7684;&#x5404;&#x79CD;&#x89E3;&#x6790;&#x5668;&#x3002;&#x4F8B;&#x5982;&#x4E0A;&#x8FF0;&#x7684;gitbook-markdown &#x5C31;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x89E3;&#x6790;&#x5668;</p>
+<p>gitbook-markdown&#x89E3;&#x6790;&#x5B8C;&#x4E86;&#xFF0C;gitbook-parsers&#x5BF9;&#x4ED6;&#x4E8C;&#x6B21;&#x52A0;&#x5DE5;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    &quot;chapters&quot;: [
+        {
+            &quot;path&quot;: &quot;README.md&quot;,
+            &quot;title&quot;: &quot;Introduction&quot;,
+            &quot;level&quot;: &quot;0&quot;,
+            &quot;articles&quot;: [], //&#x6587;&#x7AE0;&#x5217;&#x8868;
+            &quot;exists&quot;: true, //&#x662F;&#x5426;&#x5B58;&#x5728;
+            &quot;external&quot;: false,  // &#x662F;&#x5426;&#x662F;&#x5916;&#x90E8;&#x94FE;&#x63A5;(e.g http://a.com/Readme.md)
+            &quot;introduction&quot;: true //&#x662F;&#x5426;&#x4ECB;&#x7ECD;&#x9875;
+        },
+        {
+            &quot;path&quot;: &quot;format/README.md&quot;,
+            &quot;title&quot;: &quot;Format&quot;,
+            &quot;level&quot;: &quot;1&quot;,
+            &quot;articles&quot;: [
+                {
+                    &quot;path&quot;: &quot;format/output.md&quot;,
+                    &quot;title&quot;: &quot;Output&quot;,
+                    &quot;level&quot;: &quot;1.1&quot;,
+                    &quot;articles&quot;: [],
+                    &quot;exists&quot;: true,
+                    &quot;external&quot;: false,
+                    &quot;introduction&quot;: false
+                },
+                {
+                    &quot;path&quot;: &quot;format/introduction.md&quot;,
+                    &quot;title&quot;: &quot;Readme and Introduction&quot;,
+                    &quot;level&quot;: &quot;1.2&quot;,
+                    &quot;articles&quot;: [],
+                    &quot;exists&quot;: true,
+                    &quot;external&quot;: false,
+                    &quot;introduction&quot;: false
+                },
+                {
+                    &quot;path&quot;: &quot;format/chapters.md&quot;,
+                    &quot;title&quot;: &quot;Chapters and Subchapters&quot;,
+                    &quot;level&quot;: &quot;1.3&quot;,
+                    &quot;articles&quot;: [],
+                    &quot;exists&quot;: true,
+                    &quot;external&quot;: false,
+                    &quot;introduction&quot;: false
+                },
+                {
+                    &quot;path&quot;: &quot;build/README.md&quot;,
+                    &quot;title&quot;: &quot;Build&quot;,
+                    &quot;level&quot;: &quot;1.4&quot;,
+                    &quot;articles&quot;: [
+                        {
+                            &quot;path&quot;: &quot;build/push.md&quot;,
+                            &quot;title&quot;: &quot;Update with GIT&quot;,
+                            &quot;level&quot;: &quot;1.4.1&quot;,
+                            &quot;articles&quot;: [],
+                            &quot;exists&quot;: true,
+                            &quot;external&quot;: false,
+                            &quot;introduction&quot;: false
+                        },
+                        {
+                            &quot;path&quot;: &quot;build/errors.md&quot;,
+                            &quot;title&quot;: &quot;Common Errors&quot;,
+                            &quot;level&quot;: &quot;1.4.2&quot;,
+                            &quot;articles&quot;: [],
+                            &quot;exists&quot;: true,
+                            &quot;external&quot;: false,
+                            &quot;introduction&quot;: false
+                        },
+                        {
+                            &quot;path&quot;: &quot;build/ebookconvert.md&quot;,
+                            &quot;title&quot;: &quot;ebook-convert&quot;,
+                            &quot;level&quot;: &quot;1.4.3&quot;,
+                            &quot;articles&quot;: [],
+                            &quot;exists&quot;: true,
+                            &quot;external&quot;: false,
+                            &quot;introduction&quot;: false
+                        }
+                    ],
+                    &quot;exists&quot;: true,
+                    &quot;external&quot;: false,
+                    &quot;introduction&quot;: false
+                }
+            ],
+            &quot;exists&quot;: true,
+            &quot;external&quot;: false,
+            &quot;introduction&quot;: false
+        },
+        {
+            &quot;path&quot;: &quot;github/README.md&quot;,
+            &quot;title&quot;: &quot;GitHub Integration&quot;,
+            &quot;level&quot;: &quot;2&quot;,
+            &quot;articles&quot;: [
+                {
+                    &quot;path&quot;: &quot;github/transferring_to_github.md&quot;,
+                    &quot;title&quot;: &quot;Transferring content to GitHub&quot;,
+                    &quot;level&quot;: &quot;2.1&quot;,
+                    &quot;articles&quot;: [],
+                    &quot;exists&quot;: true,
+                    &quot;external&quot;: false,
+                    &quot;introduction&quot;: false
+                }
+            ],
+            &quot;exists&quot;: true,
+            &quot;external&quot;: false,
+            &quot;introduction&quot;: false
+        }
+    ]
+}
+</code></pre>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../v2/feedback.html"><span class="title">用户反馈</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="../index.html" class="link title  link-index">编程助手开发文档</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">v3.x</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="../v3/draft.html" class="link title  link-v3draft">开发规范</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">v2.x</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="../v2/draft.html" class="link title  link-v2draft">开发规范</a>
+                </li>
+                <li class="menu-item -level-2"><a href="../v2/md-release.html" class="link title  link-v2md-release">发布新版</a>
+                </li>
+                <li class="menu-item -level-2"><a href="../v2/feedback.html" class="link title  link-v2feedback">用户反馈</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="../gitbook/index.html" class="link title -active link-gitbook">GitBook分析</a>
+              <ul class="headings heading-list">
+                <li class="heading-item -depth-3"><a href="#gitbook-markdown" class="hlink link-gitbook-markdown">gitbook-markdown</a>
+                </li>
+                <li class="heading-item -depth-3"><a href="#gitbook-parsers" class="hlink link-gitbook-parsers">gitbook-parsers</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

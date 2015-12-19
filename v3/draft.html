@@ -92,26 +92,46 @@
 </code></pre>
 <p>&#x540C;&#x65F6;&#x9700;&#x8981;&#x901A;&#x8FC7;<code>SUMMERY.md</code>&#x89E3;&#x6790;&#x751F;&#x6210;&#x4E00;&#x4EFD;<code>summery.json</code>&#x3002;&#x5BF9;&#x5E94;&#x4E0A;&#x8FF0;&#x7684;&#x751F;&#x6210;&#x5982;&#x4E0B;</p>
 <pre><code>{
-    &quot;summery&quot;: [
+    &quot;chapters&quot;: [  //&#x7AE0;&#x8282;
         {
             &quot;title&quot;:&quot;Introduction&quot;,   //&#x540D;&#x79F0;
-            &quot;source&quot;: &quot;README.md&quot;  //&#x5BF9;&#x5E94;&#x7684;markdown&#x6587;&#x4EF6;
-            &quot;url&quot;: &quot;index.html&quot;
+            &quot;path&quot;: &quot;README.md&quot;  //&#x5BF9;&#x5E94;&#x7684;markdown&#x6587;&#x4EF6;
+            &quot;url&quot;: &quot;index.html&quot;,
+            &quot;level&quot;: &quot;0&quot;,
+            &quot;exists&quot;: true, //&#x662F;&#x5426;&#x5B58;&#x5728;
+            &quot;external&quot;: false,  // &#x662F;&#x5426;&#x662F;&#x5916;&#x90E8;&#x94FE;&#x63A5;(e.g http://a.com/Readme.md)
+            &quot;introduction&quot;: true, //&#x662F;&#x5426;&#x4ECB;&#x7ECD;&#x9875;
+            &quot;articles&quot;: [] //&#x6587;&#x7AE0;&#x5217;&#x8868;
         },
         {
             &quot;title&quot;:&quot;Build&quot;,   
-            &quot;file&quot;: &quot;build/README.md&quot;,
+            &quot;path&quot;: &quot;build/README.md&quot;,
             &quot;url&quot;: &quot;build/index.html&quot;
-            &quot;sections&quot;: [   //&#x5B50;&#x76EE;&#x5F55;
+            &quot;level&quot;: &quot;1&quot;,
+            &quot;exists&quot;: true, //&#x662F;&#x5426;&#x5B58;&#x5728;
+            &quot;external&quot;: false,  // &#x662F;&#x5426;&#x662F;&#x5916;&#x90E8;&#x94FE;&#x63A5;(e.g http://a.com/Readme.md)
+            &quot;introduction&quot;: true, //&#x662F;&#x5426;&#x4ECB;&#x7ECD;&#x9875;
+            &quot;articles&quot;: [] //&#x6587;&#x7AE0;&#x5217;&#x8868;
+            &quot;articles&quot;: [   //&#x5B50;&#x76EE;&#x5F55;
                 {
                     &quot;title&quot;:&quot;Update with GIT&quot;,   
-                    &quot;source&quot;: &quot;build/push.md&quot;,
-                    &quot;url&quot;: &quot;build/push.html&quot;
+                    &quot;path&quot;: &quot;build/push.md&quot;,
+                    &quot;url&quot;: &quot;build/push.html&quot;,
+                    &quot;level&quot;: &quot;1.1&quot;,
+                    &quot;exists&quot;: true, //&#x662F;&#x5426;&#x5B58;&#x5728;
+                    &quot;external&quot;: false,  // &#x662F;&#x5426;&#x662F;&#x5916;&#x90E8;&#x94FE;&#x63A5;(e.g http://a.com/Readme.md)
+                    &quot;introduction&quot;: false, //&#x662F;&#x5426;&#x4ECB;&#x7ECD;&#x9875;
+                    &quot;articles&quot;: [] //&#x6587;&#x7AE0;&#x5217;&#x8868;
                 },
                 {
                     &quot;title&quot;:&quot;Introduction&quot;,
-                    &quot;source&quot;: &quot;build/ebook-convert.md&quot;,
-                    &quot;url&quot;: &quot;build/ebookconvert.html&quot;
+                    &quot;path&quot;: &quot;build/ebook-convert.md&quot;,
+                    &quot;url&quot;: &quot;build/ebookconvert.html&quot;,
+                    &quot;level&quot;: &quot;1.2&quot;,
+                    &quot;exists&quot;: true, //&#x662F;&#x5426;&#x5B58;&#x5728;
+                    &quot;external&quot;: false,  // &#x662F;&#x5426;&#x662F;&#x5916;&#x90E8;&#x94FE;&#x63A5;(e.g http://a.com/Readme.md)
+                    &quot;introduction&quot;: false, //&#x662F;&#x5426;&#x4ECB;&#x7ECD;&#x9875;
+                    &quot;articles&quot;: [] //&#x6587;&#x7AE0;&#x5217;&#x8868;
                 }
             ]
         }
@@ -120,7 +140,7 @@
 </code></pre>
 <h2 id="interview">Interview&#x6A21;&#x5757;</h2>
 <p>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x9762;&#x8BD5;&#x9898;&#x76EE;<code>questionA.md</code></p>
-<pre><code class="lang-text">    - type: reply   //&#x5FC5;&#x586B; &#x5224;&#x65AD;judgment &#x5355;&#x9009;radio &#x591A;&#x9009;choice &#x56DE;&#x7B54;reply
+<pre><code class="lang-text">    - type: reply   //&#x5FC5;&#x586B; &#x5224;&#x65AD;judgment &#x9009;&#x62E9;choice &#x56DE;&#x7B54;reply
     - tag: &#x524D;&#x7AEF; node.js npm //&#x53EF;&#x9009;
     - difficulty:  1 //&#x53EF;&#x9009;&#xFF0C;0-5&#xFF0C;&#x9ED8;&#x8BA4;0
     - from: &apos;Google 2015&#x7B14;&#x8BD5;&apos;
@@ -203,6 +223,8 @@
                 <li class="menu-item -level-2"><a href="../v2/feedback.html" class="link title  link-v2feedback">用户反馈</a>
                 </li>
               </ul>
+            </li>
+            <li class="menu-item -level-1"><a href="../gitbook/index.html" class="link title  link-gitbook">GitBook分析</a>
             </li>
           </ul>
         </li>
