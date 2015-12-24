@@ -1,7 +1,4 @@
 # gitbook overview
->docpress bug: 在一markdown内容页无法引用其他markdown d
-
-[](../v3/draft.md)
 
 ### gitbook-markdown
 
