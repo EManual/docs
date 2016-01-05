@@ -23,30 +23,32 @@
 
 文件目录结构
 ```
-    feeds
-    ├── interview  // 面试
-    │   └── java-xxx.json //javaXX面试题目
-    └── book // 各类教程
+    |── feeds-book // 各类教程
         └── php-the-right-way.json //php-the-right-way.json
+        
+        
+    ├── feeds-interview  // 面试模块
+       └── java-xxx.json //javaXX面试题目
+       └── c-xxx.json //C XX面试题目
 ```
 
-描述一个module的json格式如下
+描述book的json格式如下
 
 ```json
 {
     "name": "java",
-    "md5": "xxxx", //前5位即可
+    "md5": "xxxx", //前5位即可,教程没有版本，所以用MD5
     "icon_url": "", // 图片链接 16*16@1x
     //下载链接
     "url": "http://us.iemanual.com/xxx/yy.tar"
 }
 ```
 
-描述一份interview的json格式如下
+描述interview的json格式如下
 
 ```json
 {
-    "name": "java",
+    "name": "java-xxx",
     "md5": "xxxx", //前5位即可
     "icon_url": "", // 图片链接 16*16@1x
     //mirror
