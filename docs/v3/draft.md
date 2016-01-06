@@ -37,10 +37,23 @@
 ```json
 {
     "name": "java",
-    "md5": "xxxx", //前5位即可,教程没有版本，所以用MD5
+    "md5": "xxxx", //
+    "source":"", //源仓库
     "icon_url": "", // 图片链接 16*16@1x
     //下载链接
-    "url": "http://us.iemanual.com/xxx/yy.tar"
+    "url": "http://us.iemanual.com/xxx/yy.tar", //已打包好的
+    "author": "Foo Bar",
+    "homepage":"http://foo-bar.com",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:ConnorAtherton/loaders.css.git"
+    },
+    "maintainers":[
+        {
+            "name":"User A",
+            "email":"foo@gmail.com"
+        }
+    ]
 }
 ```
 
@@ -62,12 +75,12 @@
 本想自订一套规范，但是GitBook的已经做得挺完善，于是采用gitbook作为一个规范: 用一份含有TOC(table of content)的
 的markdown来组织整个模块的内容。
 
-一般的目录结构
+一般的gitbook目录结构
 
 ```
 ├── README.md
 ├── SUMMARY.md
-├── build
+├── XXXXX
 │   ├── README.md
 │   └── visibility.md
 ├── styles
