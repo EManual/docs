@@ -61,6 +61,11 @@
                 "id": ""
               },
               {
+                "title": "资源(resources)",
+                "depth": 2,
+                "id": "(resources)"
+              },
+              {
                 "title": "模块源",
                 "depth": 2,
                 "id": ""
@@ -242,6 +247,11 @@
           "title": "文件名规范",
           "depth": 2,
           "id": ""
+        },
+        {
+          "title": "资源(resources)",
+          "depth": 2,
+          "id": "(resources)"
         },
         {
           "title": "模块源",
