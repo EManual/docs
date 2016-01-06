@@ -19,6 +19,16 @@
   - NOTE: **文件名不能使用`:`**,Linux下正常，OS X下直接创建不行，用命令行创建自动转成/ ，windows下直接跪了:直接截断后面的，**所以不再能使用冒号，用空格代替**
   - 详细中英文对应，请看:[emanual-filename](https://github.com/EManual/EManual-CLI/issues/8)
 
+
+## 资源(resources)
+
+icon大小，最小尺寸16*16， @2x为32*32，如此类推
+
+命名: 
+1. 1x的默认为`[name].png`, 例如`angular.png`
+2. 2x的为`[name]@2x.png`, 例如`angular@2x.png`
+3. 如此类推
+
 ## 模块源
 
 文件目录结构
@@ -41,21 +51,28 @@
 ```json
 {
     "name": "java",
-    "md5": "xxxx", //
-    "source":"", //源仓库
+    "md5": "xxxx",
     "icon_url": "", // 图片链接 16*16@1x
     //下载链接
     "url": "http://us.iemanual.com/xxx/yy.tar", //已打包好的
-    "author": "Foo Bar",  //作者
     "homepage":"http://foo-bar.com", //主页
+    "author": "Foo Bar",  //原作者
+    "translators": [ //翻译人员
+        {
+            "name":"Foo Bar",
+            "email":"foo@gmail.com",
+            "homepage":"https://github.com/foo"
+        }
+    ],
     "repository": {
         "type": "git",
         "url": "git@github.com:ConnorAtherton/loaders.css.git"
     },
-    "maintainers":[  //维护人员
+    "maintainers":[  //book维护人员
         {
             "name":"User A",
-            "email":"foo@gmail.com"
+            "email":"foo@gmail.com",
+            "homepage":"https://github.com/foo"
         }
     ]
 }
