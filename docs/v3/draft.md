@@ -22,8 +22,6 @@
 
 ## 资源(resources)
 
-icon大小，最小尺寸16*16， @2x为32*32，如此类推
-
 命名: 
 1. 1x的默认为`[name].png`, 例如`angular.png`
 2. 2x的为`[name]@2x.png`, 例如`angular@2x.png`
