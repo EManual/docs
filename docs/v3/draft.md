@@ -24,15 +24,19 @@
 文件目录结构
 ```
     |── feeds-book // 各类教程
-        └── php-the-right-way.json //php-the-right-way.json
+        └── php-the-right-way
+               |---- info.json //php-the-right-way.json
+               |---- Readme.md //一些补充说明
         
         
     ├── feeds-interview  // 面试模块
-       └── java-xxx.json //javaXX面试题目
-       └── c-xxx.json //C XX面试题目
+       |---java-xxx 
+            └── info.json //面试题描述资料
+       └── c-xxx
+            └── info.json 
 ```
 
-描述book的json格式如下
+描述book的`info.json`格式如下
 
 ```json
 {
@@ -42,13 +46,13 @@
     "icon_url": "", // 图片链接 16*16@1x
     //下载链接
     "url": "http://us.iemanual.com/xxx/yy.tar", //已打包好的
-    "author": "Foo Bar",
-    "homepage":"http://foo-bar.com",
+    "author": "Foo Bar",  //作者
+    "homepage":"http://foo-bar.com", //主页
     "repository": {
         "type": "git",
         "url": "git@github.com:ConnorAtherton/loaders.css.git"
     },
-    "maintainers":[
+    "maintainers":[  //维护人员
         {
             "name":"User A",
             "email":"foo@gmail.com"
