@@ -8,9 +8,9 @@
         "slug": "index",
         "headings": [
           {
-            "title": "编程助手开发文档",
+            "title": "编程助手开发文档 [![Build Status](https://travis-ci.org/EManual/docs.svg)](https://travis-ci.org/EManual/docs)",
             "depth": 2,
-            "id": "",
+            "id": "!build-status(https:travis-ci.orgemanualdocs.svg)(https:travis-ci.orgemanualdocs)",
             "headings": [
               {
                 "title": "安装",
@@ -21,11 +21,6 @@
                 "title": "本地预览",
                 "depth": 3,
                 "id": ""
-              },
-              {
-                "title": "发布到`gh-pages`",
-                "depth": 3,
-                "id": "gh-pages"
               },
               {
                 "title": "提交修改并推送到GitHub",
@@ -200,9 +195,9 @@
       "slug": "index",
       "headings": [
         {
-          "title": "编程助手开发文档",
+          "title": "编程助手开发文档 [![Build Status](https://travis-ci.org/EManual/docs.svg)](https://travis-ci.org/EManual/docs)",
           "depth": 2,
-          "id": "",
+          "id": "!build-status(https:travis-ci.orgemanualdocs.svg)(https:travis-ci.orgemanualdocs)",
           "headings": [
             {
               "title": "安装",
@@ -213,11 +208,6 @@
               "title": "本地预览",
               "depth": 3,
               "id": ""
-            },
-            {
-              "title": "发布到`gh-pages`",
-              "depth": 3,
-              "id": "gh-pages"
             },
             {
               "title": "提交修改并推送到GitHub",
