@@ -1,11 +1,12 @@
+language: node_js
 node_js:
 - 4
 
 env:
   global:
-    - GIT_NAME: Travis CI
-    - GIT_EMAIL: nobody@nobody.org
-    - GITHUB_REPO: rstacruz/myproject
+    - GIT_NAME: JayinRobot
+    - GIT_EMAIL: tonjayin+robot@gmail.com
+    - GITHUB_REPO: EManual/docs
     - GIT_SOURCE: _docpress
 
 script:
