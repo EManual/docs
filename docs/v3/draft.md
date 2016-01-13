@@ -25,7 +25,7 @@
 命名: 
 1. 1x的默认为`[name].png`, 例如`angular.png`
 2. 2x的为`[name]@2x.png`, 例如`angular@2x.png`
-3. 如此类推
+3. 如此类推,`angular@nx.png`
 
 ## 模块源
 
@@ -55,17 +55,6 @@
     "url": "http://us.iemanual.com/xxx/yy.tar", //已打包好的
     "homepage":"http://foo-bar.com", //主页
     "author": "Foo Bar",  //原作者
-    "translators": [ //翻译人员
-        {
-            "name":"Foo Bar",
-            "email":"foo@gmail.com",
-            "homepage":"https://github.com/foo"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:ConnorAtherton/loaders.css.git"
-    },
     "maintainers":[  //book维护人员
         {
             "name":"User A",
