@@ -31,17 +31,18 @@
 
 文件目录结构
 ```
-    |── feeds-book // 各类教程
+|── feeds-book // 各类教程
+    └──feeds
         └── php-the-right-way
-               |---- info.json //php-the-right-way.json
-               |---- Readme.md //一些补充说明
-        
-        
-    ├── feeds-interview  // 面试模块
-       |---java-xxx 
-            └── info.json //面试题描述资料
-       └── c-xxx
-            └── info.json 
+                |---- info.json //php-the-right-way.json
+                |---- Readme.md //一些补充说明
+    
+    
+├── feeds-interview  // 面试模块
+    |---java-xxx 
+        └── info.json //面试题描述资料
+      └── c-xxx
+        └── info.json 
 ```
 
 描述book的`info.json`格式如下
