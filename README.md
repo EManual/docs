@@ -5,7 +5,7 @@
 
 ### 安装
 
-文档生成工具docpress
+文档生成工具[docpress](https://github.com/docpress/docpress)
 ```
 $ npm install -g docpress
 ```
