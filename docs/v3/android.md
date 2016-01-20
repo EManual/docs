@@ -1,9 +1,10 @@
 ### 文档存放目录
 
 ```
-|--io.github.emanual.app //应用根目录
-    |----download  //下载临实页
-    |----feeds     //已解压好的文档
+|--/data/dataio.github.emanual.app //应用根目录
+    |---files
+        |----download  //下载文档临时存放
+        |----book     //已解压好的文档
 ```
 
 NOTE:
