@@ -22,83 +22,83 @@
 <p>gitbook&#x7684;&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x89E3;&#x6790;<code>SUMMARY.md</code>, <code>README.md</code>&#x7B49;&#x9884;&#x8BBE;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x7EA6;&#x5B9A;&#x7684;markdown&#x6587;&#x4EF6;&#xFF0C;&#x53EA;&#x4F1A;&#x89E3;&#x6790;&#x57FA;&#x672C;&#x7684;<strong>&#x76EE;&#x5F55;</strong>&#x7ED3;&#x6784;</p>
 <h4 id="gitbook-markdownsummary.md">gitbook-markdown&#x5BF9;<code>SUMMARY.md</code>&#x89E3;&#x6790;</h4>
 <p>exampel:</p>
-<pre><code class="lang-markdown"><span class="hljs-header"># Summary</span>
+<pre><code class="lang-markdown"><span class="hljs-section"># Summary</span>
 
-<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Introduction</span>](<span class="hljs-link_url">README.md</span>)
-<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Format</span>](<span class="hljs-link_url">format/README.md</span>)
-   * [<span class="hljs-link_label">Output</span>](<span class="hljs-link_url">format/output.md</span>)
-   * [<span class="hljs-link_label">Readme and Introduction</span>](<span class="hljs-link_url">format/introduction.md</span>)
-   * [<span class="hljs-link_label">Chapters and Subchapters</span>](<span class="hljs-link_url">format/chapters.md</span>)
-<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Build</span>](<span class="hljs-link_url">build/README.md</span>)
-  * [<span class="hljs-link_label">Update with GIT</span>](<span class="hljs-link_url">build/push.md</span>)
-  * [<span class="hljs-link_label">Common Errors</span>](<span class="hljs-link_url">build/errors.md</span>)
-  * [<span class="hljs-link_label">ebook-convert</span>](<span class="hljs-link_url">build/ebookconvert.md</span>)
-<span class="hljs-bullet">* </span>[<span class="hljs-link_label">GitHub Integration</span>](<span class="hljs-link_url">github/README.md</span>)
-   * [<span class="hljs-link_label">Transferring content to GitHub</span>](<span class="hljs-link_url">github/transferring_to_github.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Introduction</span>](<span class="hljs-link">README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Format</span>](<span class="hljs-link">format/README.md</span>)
+   * [<span class="pl-s">Output</span>](<span class="hljs-link">format/output.md</span>)
+   * [<span class="pl-s">Readme and Introduction</span>](<span class="hljs-link">format/introduction.md</span>)
+   * [<span class="pl-s">Chapters and Subchapters</span>](<span class="hljs-link">format/chapters.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Build</span>](<span class="hljs-link">build/README.md</span>)
+  * [<span class="pl-s">Update with GIT</span>](<span class="hljs-link">build/push.md</span>)
+  * [<span class="pl-s">Common Errors</span>](<span class="hljs-link">build/errors.md</span>)
+  * [<span class="pl-s">ebook-convert</span>](<span class="hljs-link">build/ebookconvert.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">GitHub Integration</span>](<span class="hljs-link">github/README.md</span>)
+   * [<span class="pl-s">Transferring content to GitHub</span>](<span class="hljs-link">github/transferring_to_github.md</span>)
 </code></pre>
 <p><code>gitbook-markdown</code>&#x89E3;&#x6790;&#x7684;&#x7ED3;&#x6784;&#x662F;:</p>
 <pre><code class="lang-json">{
-    &quot;<span class="pl-e">chapters</span>&quot;: <span class="pl-s">[
+    &quot;<span class="hljs-attr">chapters</span>&quot;: [
         {
-            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Introduction&quot;</span></span>,
-            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;README.md&quot;</span></span>,
-            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
-        </span>},
+            &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;Introduction&quot;</span>,
+            &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;README.md&quot;</span>,
+            &quot;<span class="hljs-attr">articles</span>&quot;: []
+        },
         {
-            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Format&quot;</span></span>,
-            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;format/README.md&quot;</span></span>,
-            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[
+            &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;Format&quot;</span>,
+            &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;format/README.md&quot;</span>,
+            &quot;<span class="hljs-attr">articles</span>&quot;: [
                 {
-                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Output&quot;</span></span>,
-                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;format/output.md&quot;</span></span>,
-                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
-                </span>},
+                    &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;Output&quot;</span>,
+                    &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;format/output.md&quot;</span>,
+                    &quot;<span class="hljs-attr">articles</span>&quot;: []
+                },
                 {
-                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Readme and Introduction&quot;</span></span>,
-                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;format/introduction.md&quot;</span></span>,
-                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
-                </span>},
+                    &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;Readme and Introduction&quot;</span>,
+                    &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;format/introduction.md&quot;</span>,
+                    &quot;<span class="hljs-attr">articles</span>&quot;: []
+                },
                 {
-                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Chapters and Subchapters&quot;</span></span>,
-                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;format/chapters.md&quot;</span></span>,
-                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
-                </span>},
+                    &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;Chapters and Subchapters&quot;</span>,
+                    &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;format/chapters.md&quot;</span>,
+                    &quot;<span class="hljs-attr">articles</span>&quot;: []
+                },
                 {
-                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Build&quot;</span></span>,
-                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;build/README.md&quot;</span></span>,
-                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[
+                    &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;Build&quot;</span>,
+                    &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;build/README.md&quot;</span>,
+                    &quot;<span class="hljs-attr">articles</span>&quot;: [
                         {
-                            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Update with GIT&quot;</span></span>,
-                            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;build/push.md&quot;</span></span>,
-                            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
-                        </span>},
+                            &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;Update with GIT&quot;</span>,
+                            &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;build/push.md&quot;</span>,
+                            &quot;<span class="hljs-attr">articles</span>&quot;: []
+                        },
                         {
-                            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Common Errors&quot;</span></span>,
-                            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;build/errors.md&quot;</span></span>,
-                            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
-                        </span>},
+                            &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;Common Errors&quot;</span>,
+                            &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;build/errors.md&quot;</span>,
+                            &quot;<span class="hljs-attr">articles</span>&quot;: []
+                        },
                         {
-                            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;ebook-convert&quot;</span></span>,
-                            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;build/ebookconvert.md&quot;</span></span>,
-                            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
-                        </span>}
+                            &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;ebook-convert&quot;</span>,
+                            &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;build/ebookconvert.md&quot;</span>,
+                            &quot;<span class="hljs-attr">articles</span>&quot;: []
+                        }
                     ]
-                </span>}
+                }
             ]
-        </span>},
+        },
         {
-            &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;GitHub Integration&quot;</span></span>,
-            &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;github/README.md&quot;</span></span>,
-            &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[
+            &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;GitHub Integration&quot;</span>,
+            &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;github/README.md&quot;</span>,
+            &quot;<span class="hljs-attr">articles</span>&quot;: [
                 {
-                    &quot;<span class="pl-e">title</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;Transferring content to GitHub&quot;</span></span>,
-                    &quot;<span class="pl-e">path</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;github/transferring_to_github.md&quot;</span></span>,
-                    &quot;<span class="pl-e">articles</span>&quot;: <span class="pl-s">[]
-                </span>}
+                    &quot;<span class="hljs-attr">title</span>&quot;: <span class="pl-s">&quot;Transferring content to GitHub&quot;</span>,
+                    &quot;<span class="hljs-attr">path</span>&quot;: <span class="pl-s">&quot;github/transferring_to_github.md&quot;</span>,
+                    &quot;<span class="hljs-attr">articles</span>&quot;: []
+                }
             ]
-        </span>}
+        }
     ]
-</span>}
+}
 </code></pre>
 <p>&#x95EE;&#x9898;&#x6765;&#x4E86;: &#x5982;&#x4F55;&#x8BC6;&#x522B;&#x7AE0;&#x8282;/&#x6587;&#x7AE0;&#xFF1F; &#x76EE;&#x6D4B;&#x4E0A;&#x8FF0;&#x7ED3;&#x6784;&#x53EA;&#x6709;&#x6839;&#x8282;&#x70B9;&#x662F;&#x7AE0;&#x8282;</p>
 <h3 id="gitbook-parsers">gitbook-parsers</h3>
