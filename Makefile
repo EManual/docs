@@ -9,4 +9,4 @@ syncUpdate:
 serve:
 	@docpress s
 
-.PHONY: main deploy
+.PHONY: main syncUpdate serve
