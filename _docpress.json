@@ -28,6 +28,11 @@
                 "id": "github"
               }
             ]
+          },
+          {
+            "title": "License",
+            "depth": 2,
+            "id": "license"
           }
         ]
       },
@@ -97,6 +102,26 @@
                 "title": "文档存放目录",
                 "depth": 3,
                 "id": ""
+              }
+            ]
+          },
+          {
+            "title": "构建Book",
+            "source": "docs/v3/book.md",
+            "url": "v3/book.html",
+            "slug": "v3book",
+            "headings": [
+              {
+                "title": "构建Book",
+                "depth": 2,
+                "id": "book",
+                "headings": [
+                  {
+                    "title": "Requirement",
+                    "depth": 3,
+                    "id": "requirement"
+                  }
+                ]
               }
             ]
           }
@@ -233,6 +258,11 @@
               "id": "github"
             }
           ]
+        },
+        {
+          "title": "License",
+          "depth": 2,
+          "id": "license"
         }
       ]
     },
@@ -297,6 +327,25 @@
           "title": "文档存放目录",
           "depth": 3,
           "id": ""
+        }
+      ]
+    },
+    "v3/book.html": {
+      "source": "docs/v3/book.md",
+      "title": "构建Book",
+      "slug": "v3book",
+      "headings": [
+        {
+          "title": "构建Book",
+          "depth": 2,
+          "id": "book",
+          "headings": [
+            {
+              "title": "Requirement",
+              "depth": 3,
+              "id": "requirement"
+            }
+          ]
         }
       ]
     },
@@ -398,6 +447,7 @@
     "README.md": "index.html",
     "docs/v3/draft.md": "v3/draft.html",
     "docs/v3/android.md": "v3/android.html",
+    "docs/v3/book.md": "v3/book.html",
     "docs/v2/draft.md": "v2/draft.html",
     "docs/v2/md-release.md": "v2/md-release.html",
     "docs/v2/feedback.md": "v2/feedback.html",
