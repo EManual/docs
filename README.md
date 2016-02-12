@@ -21,3 +21,7 @@ $ make serve
 ```
 $ make syncUpdate
 ```
+
+## License 
+
+Apache v2.0 © [Jayin Ton](https://github.com/EManual)
