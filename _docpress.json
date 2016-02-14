@@ -124,6 +124,26 @@
                 ]
               }
             ]
+          },
+          {
+            "title": "构建Interview",
+            "source": "docs/v3/interview.md",
+            "url": "v3/interview.html",
+            "slug": "v3interview",
+            "headings": [
+              {
+                "title": "interview",
+                "depth": 2,
+                "id": "interview",
+                "headings": [
+                  {
+                    "title": "Requirement",
+                    "depth": 3,
+                    "id": "requirement"
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -349,6 +369,25 @@
         }
       ]
     },
+    "v3/interview.html": {
+      "source": "docs/v3/interview.md",
+      "title": "构建Interview",
+      "slug": "v3interview",
+      "headings": [
+        {
+          "title": "interview",
+          "depth": 2,
+          "id": "interview",
+          "headings": [
+            {
+              "title": "Requirement",
+              "depth": 3,
+              "id": "requirement"
+            }
+          ]
+        }
+      ]
+    },
     "v2/draft.html": {
       "source": "docs/v2/draft.md",
       "title": "开发规范",
@@ -448,6 +487,7 @@
     "docs/v3/draft.md": "v3/draft.html",
     "docs/v3/android.md": "v3/android.html",
     "docs/v3/book.md": "v3/book.html",
+    "docs/v3/interview.md": "v3/interview.html",
     "docs/v2/draft.md": "v2/draft.html",
     "docs/v2/md-release.md": "v2/md-release.html",
     "docs/v2/feedback.md": "v2/feedback.html",
