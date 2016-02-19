@@ -76,11 +76,6 @@
                 "id": "book"
               },
               {
-                "title": "Interview模块",
-                "depth": 2,
-                "id": "interview"
-              },
-              {
                 "title": "搜索(Index)支持?",
                 "depth": 2,
                 "id": "(index)"
@@ -126,13 +121,13 @@
             ]
           },
           {
-            "title": "构建Interview",
+            "title": "Interview",
             "source": "docs/v3/interview.md",
             "url": "v3/interview.html",
             "slug": "v3interview",
             "headings": [
               {
-                "title": "interview",
+                "title": "Interview模块",
                 "depth": 2,
                 "id": "interview",
                 "headings": [
@@ -140,6 +135,11 @@
                     "title": "Requirement",
                     "depth": 3,
                     "id": "requirement"
+                  },
+                  {
+                    "title": "草案",
+                    "depth": 3,
+                    "id": ""
                   }
                 ]
               }
@@ -322,11 +322,6 @@
           "id": "book"
         },
         {
-          "title": "Interview模块",
-          "depth": 2,
-          "id": "interview"
-        },
-        {
           "title": "搜索(Index)支持?",
           "depth": 2,
           "id": "(index)"
@@ -371,11 +366,11 @@
     },
     "v3/interview.html": {
       "source": "docs/v3/interview.md",
-      "title": "构建Interview",
+      "title": "Interview",
       "slug": "v3interview",
       "headings": [
         {
-          "title": "interview",
+          "title": "Interview模块",
           "depth": 2,
           "id": "interview",
           "headings": [
@@ -383,6 +378,11 @@
               "title": "Requirement",
               "depth": 3,
               "id": "requirement"
+            },
+            {
+              "title": "草案",
+              "depth": 3,
+              "id": ""
             }
           ]
         }
