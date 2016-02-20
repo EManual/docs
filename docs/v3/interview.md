@@ -40,7 +40,7 @@ ref: [为啥没有单双选][choice]
 ```json
 {
     "type": "reply", //NOTE!: key/value 解析后均为小写
-    "tag": ["前端", "node.js", "npm"],
+    "tag": "前端 node.js npm",
     "difficulty": 1 ,
     "from": "Google 2015笔试",
     "description": "{试题的markdown内容}",
