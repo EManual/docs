@@ -14,7 +14,7 @@ ref: [为啥没有单双选][choice]
 
 ```text
     - type: reply   //必填 判断judgment 选择choice([为啥没有单双选][choice]) 回答reply
-    - tag: 前端 node.js npm //可选
+    - tag: 前端 node.js npm //可选，空格隔开
     - difficulty:  1 //可选，0-5，默认0
     - from: 'Google 2015笔试'
 
@@ -24,7 +24,7 @@ ref: [为啥没有单双选][choice]
 
     //如果是有选项的话(每一行一个选项)
     ```option
-    A、getWriteableDatabase()
+    A、getWriteableDatabase()  //注意选项必须是`A、`这样的格式，满足RegExp(/\w、/)
     B、getReadableDatabase()
     C、getDatabase()
     D、getAbleDatabase()
@@ -39,16 +39,16 @@ ref: [为啥没有单双选][choice]
 
 ```json
 {
-    "type": "reply",
+    "type": "reply", //NOTE!: key/value 解析后均为小写
     "tag": ["前端", "node.js", "npm"],
     "difficulty": 1 ,
     "from": "Google 2015笔试",
     "description": "{试题的markdown内容}",
     "options": [
-        "getWriteableDatabase()",
-        "getReadableDatabase()",
-        "getDatabase()",
-        "getAbleDatabase()"
+        "A、getWriteableDatabase()",
+        "B、getReadableDatabase()",
+        "C、getDatabase()",
+        "D、getAbleDatabase()"
     ],
     "answer": "{试题的markdown 答案}"
 }
