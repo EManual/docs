@@ -29,10 +29,83 @@
 </li>
 <li>zip <code>$ apt-get install zip</code></li>
 </ul>
+<h2 id="book">Book&#x6A21;&#x5757;</h2>
+<p>&#x672C;&#x60F3;&#x81EA;&#x8BA2;&#x4E00;&#x5957;&#x89C4;&#x8303;&#xFF0C;&#x4F46;&#x662F;GitBook&#x7684;&#x5DF2;&#x7ECF;&#x505A;&#x5F97;&#x633A;&#x5B8C;&#x5584;&#xFF0C;&#x4E8E;&#x662F;&#x91C7;&#x7528;gitbook&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x89C4;&#x8303;: &#x7528;&#x4E00;&#x4EFD;&#x542B;&#x6709;TOC(table of content)&#x7684;
+&#x7684;markdown&#x6765;&#x7EC4;&#x7EC7;&#x6574;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x7684;gitbook&#x76EE;&#x5F55;&#x7ED3;&#x6784;</p>
+<pre><code>&#x251C;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; SUMMARY.md
+&#x251C;&#x2500;&#x2500; XXXXX
+&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; README.md
+&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; visibility.md
+&#x251C;&#x2500;&#x2500; styles
+&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; website.css
+&#x2514;&#x2500;&#x2500; styling
+    &#x251C;&#x2500;&#x2500; book.md
+    &#x2514;&#x2500;&#x2500; homepage.md
+</code></pre>
+<p>&#x7528;&#x4E00;&#x4EFD;<code>SUMMERY.md</code>&#x6765;&#x7EC4;&#x7EC7;&#x6574;&#x672C;&#x4E66;&#x7684;TOC(table of content),&#x4E5F;&#x5C31;&#x662F;&#x76EE;&#x5F55;&#x4E86;</p>
+<p>&#x4F8B;&#x5982;</p>
+<pre><code># Summary
+
+* [Introduction](README.md)   //&#x7B2C;&#x4E00;&#x4E2A;&#x9996;&#x9875;
+* [Build](build/README.md)
+   * [Update with GIT](build/push.md)
+   * [ebook-convert](build/ebookconvert.md)
+.......
+</code></pre>
+<p>&#x540C;&#x65F6;&#x9700;&#x8981;&#x901A;&#x8FC7;<code>SUMMERY.md</code>&#x89E3;&#x6790;&#x751F;&#x6210;&#x4E00;&#x4EFD;<code>summery.json</code>&#x3002;&#x5BF9;&#x5E94;&#x4E0A;&#x8FF0;&#x7684;&#x751F;&#x6210;&#x5982;&#x4E0B;</p>
+<pre><code>{
+    &quot;chapters&quot;: [  //&#x7AE0;&#x8282;
+        {
+            &quot;title&quot;:&quot;Introduction&quot;,   //&#x540D;&#x79F0;
+            &quot;path&quot;: &quot;README.md&quot;  //&#x5BF9;&#x5E94;&#x7684;markdown&#x6587;&#x4EF6;
+            &quot;url&quot;: &quot;index.html&quot;,
+            &quot;level&quot;: &quot;0&quot;,
+            &quot;exists&quot;: true, //&#x662F;&#x5426;&#x5B58;&#x5728;
+            &quot;external&quot;: false,  // &#x662F;&#x5426;&#x662F;&#x5916;&#x90E8;&#x94FE;&#x63A5;(e.g http://a.com/Readme.md)
+            &quot;introduction&quot;: true, //&#x662F;&#x5426;&#x4ECB;&#x7ECD;&#x9875;
+            &quot;articles&quot;: [] //&#x6587;&#x7AE0;&#x5217;&#x8868;
+        },
+        {
+            &quot;title&quot;:&quot;Build&quot;,   
+            &quot;path&quot;: &quot;build/README.md&quot;,
+            &quot;url&quot;: &quot;build/index.html&quot;
+            &quot;level&quot;: &quot;1&quot;,
+            &quot;exists&quot;: true, //&#x662F;&#x5426;&#x5B58;&#x5728;
+            &quot;external&quot;: false,  // &#x662F;&#x5426;&#x662F;&#x5916;&#x90E8;&#x94FE;&#x63A5;(e.g http://a.com/Readme.md)
+            &quot;introduction&quot;: true, //&#x662F;&#x5426;&#x4ECB;&#x7ECD;&#x9875;
+            &quot;articles&quot;: [] //&#x6587;&#x7AE0;&#x5217;&#x8868;
+            &quot;articles&quot;: [   //&#x5B50;&#x76EE;&#x5F55;
+                {
+                    &quot;title&quot;:&quot;Update with GIT&quot;,   
+                    &quot;path&quot;: &quot;build/push.md&quot;,
+                    &quot;url&quot;: &quot;build/push.html&quot;,
+                    &quot;level&quot;: &quot;1.1&quot;,
+                    &quot;exists&quot;: true, //&#x662F;&#x5426;&#x5B58;&#x5728;
+                    &quot;external&quot;: false,  // &#x662F;&#x5426;&#x662F;&#x5916;&#x90E8;&#x94FE;&#x63A5;(e.g http://a.com/Readme.md)
+                    &quot;introduction&quot;: false, //&#x662F;&#x5426;&#x4ECB;&#x7ECD;&#x9875;
+                    &quot;articles&quot;: [] //&#x6587;&#x7AE0;&#x5217;&#x8868;
+                },
+                {
+                    &quot;title&quot;:&quot;Introduction&quot;,
+                    &quot;path&quot;: &quot;build/ebook-convert.md&quot;,
+                    &quot;url&quot;: &quot;build/ebookconvert.html&quot;,
+                    &quot;level&quot;: &quot;1.2&quot;,
+                    &quot;exists&quot;: true, //&#x662F;&#x5426;&#x5B58;&#x5728;
+                    &quot;external&quot;: false,  // &#x662F;&#x5426;&#x662F;&#x5916;&#x90E8;&#x94FE;&#x63A5;(e.g http://a.com/Readme.md)
+                    &quot;introduction&quot;: false, //&#x662F;&#x5426;&#x4ECB;&#x7ECD;&#x9875;
+                    &quot;articles&quot;: [] //&#x6587;&#x7AE0;&#x5217;&#x8868;
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../v3/android.html"><span class="title">Android客户端</span></a></div>
+          <div class="left"><a href="../v3/draft.html"><span class="title">开发规范</span></a></div>
           <div class="right"><a href="../v3/interview.html"><span class="label">Next: </span><span class="title">Interview</span></a></div>
         </div>
       </div>
@@ -45,8 +118,6 @@
               <ul class="submenu">
                 <li class="menu-item -level-2"><a href="../v3/draft.html" class="link title  link-v3draft">开发规范</a>
                 </li>
-                <li class="menu-item -level-2"><a href="../v3/android.html" class="link title  link-v3android">Android客户端</a>
-                </li>
                 <li class="menu-item -level-2"><a href="../v3/book.html" class="link title -active link-v3book">构建Book</a>
                   <ul class="headings heading-list">
                     <li class="heading-item -depth-2"><a href="#book" class="hlink link-book">构建Book</a>
@@ -55,9 +126,13 @@
                         </li>
                       </ul>
                     </li>
+                    <li class="heading-item -depth-2"><a href="#book" class="hlink link-book">Book模块</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="menu-item -level-2"><a href="../v3/interview.html" class="link title  link-v3interview">Interview</a>
+                </li>
+                <li class="menu-item -level-2"><a href="../v3/android.html" class="link title  link-v3android">Android客户端实现说明</a>
                 </li>
               </ul>
             </li>

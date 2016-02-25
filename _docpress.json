@@ -71,11 +71,6 @@
                 "id": ""
               },
               {
-                "title": "Book模块",
-                "depth": 2,
-                "id": "book"
-              },
-              {
                 "title": "搜索(Index)支持?",
                 "depth": 2,
                 "id": "(index)"
@@ -83,19 +78,6 @@
               {
                 "title": "客户端实现",
                 "depth": 2,
-                "id": ""
-              }
-            ]
-          },
-          {
-            "title": "Android客户端",
-            "source": "docs/v3/android.md",
-            "url": "v3/android.html",
-            "slug": "v3android",
-            "headings": [
-              {
-                "title": "文档存放目录",
-                "depth": 3,
                 "id": ""
               }
             ]
@@ -117,6 +99,11 @@
                     "id": "requirement"
                   }
                 ]
+              },
+              {
+                "title": "Book模块",
+                "depth": 2,
+                "id": "book"
               }
             ]
           },
@@ -142,6 +129,24 @@
                     "id": ""
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "title": "Android客户端实现说明",
+            "source": "docs/v3/android.md",
+            "url": "v3/android.html",
+            "slug": "v3android",
+            "headings": [
+              {
+                "title": "文档教程(Book)存放目录",
+                "depth": 3,
+                "id": "(book)"
+              },
+              {
+                "title": "应试宝典(Interview)目录",
+                "depth": 3,
+                "id": "(interview)"
               }
             ]
           }
@@ -317,11 +322,6 @@
           "id": ""
         },
         {
-          "title": "Book模块",
-          "depth": 2,
-          "id": "book"
-        },
-        {
           "title": "搜索(Index)支持?",
           "depth": 2,
           "id": "(index)"
@@ -329,18 +329,6 @@
         {
           "title": "客户端实现",
           "depth": 2,
-          "id": ""
-        }
-      ]
-    },
-    "v3/android.html": {
-      "source": "docs/v3/android.md",
-      "title": "Android客户端",
-      "slug": "v3android",
-      "headings": [
-        {
-          "title": "文档存放目录",
-          "depth": 3,
           "id": ""
         }
       ]
@@ -361,6 +349,11 @@
               "id": "requirement"
             }
           ]
+        },
+        {
+          "title": "Book模块",
+          "depth": 2,
+          "id": "book"
         }
       ]
     },
@@ -385,6 +378,23 @@
               "id": ""
             }
           ]
+        }
+      ]
+    },
+    "v3/android.html": {
+      "source": "docs/v3/android.md",
+      "title": "Android客户端实现说明",
+      "slug": "v3android",
+      "headings": [
+        {
+          "title": "文档教程(Book)存放目录",
+          "depth": 3,
+          "id": "(book)"
+        },
+        {
+          "title": "应试宝典(Interview)目录",
+          "depth": 3,
+          "id": "(interview)"
         }
       ]
     },
@@ -485,9 +495,9 @@
   "sources": {
     "README.md": "index.html",
     "docs/v3/draft.md": "v3/draft.html",
-    "docs/v3/android.md": "v3/android.html",
     "docs/v3/book.md": "v3/book.html",
     "docs/v3/interview.md": "v3/interview.html",
+    "docs/v3/android.md": "v3/android.html",
     "docs/v2/draft.md": "v2/draft.html",
     "docs/v2/md-release.md": "v2/md-release.html",
     "docs/v2/feedback.md": "v2/feedback.html",
